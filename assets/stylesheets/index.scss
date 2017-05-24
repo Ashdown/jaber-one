@@ -1,7 +1,16 @@
+//variables and config
+
 @import '_config';
 @import '_variables';
 @import '_mixins';
-@import 'reset';
+
+//global libraries
+
+@import 'lib/reset';
+@import 'lib/slick';
+@import 'lib/slick-theme';
+
+//components
 
 @import 'main';
 @import 'links-list';
@@ -10,3 +19,4 @@
 @import 'footer';
 @import 'footer-links';
 @import 'social-media-links';
+@import 'hero';
