@@ -2,17 +2,7 @@
 
   padding: 16px 0;
   background-color: $maroon;
-
-  .links-list {
-    margin: 0 auto;
-
-  }
-
   text-align: center;
-
-  .footer-link-item {
-    display: inline-block;
-  }
 
   .border {
     height: 10px;
@@ -22,7 +12,6 @@
   }
 
   .link {
-    display: inline-block;
     color: $purple;
     margin: 0 17px;
     font-family: $ag-light;

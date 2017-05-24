@@ -1,3 +1,25 @@
 .social-media-links {
 
+  margin-top: 19px;
+
+  .link {
+    height: 34px;
+    width: 34px;
+    background-size: 34px 34px;
+    margin: 0 6px;
+  }
+
+  .facebook-link {
+    background-image: url($image-folder + '/footer/facebook-icon.png');
+  }
+  .youtube-link {
+    background-image: url($image-folder + '/footer/youtube-icon.png');
+  }
+  .twitter-link {
+    background-image: url($image-folder + '/footer/twitter-icon.png');
+  }
+  .linkedin-link {
+    background-image: url($image-folder + '/footer/linkedin-icon.png');
+  }
+
 }
