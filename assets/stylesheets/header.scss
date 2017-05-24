@@ -1,3 +1,70 @@
 .header {
 
+  $header-height: 73px;
+
+  position: relative;
+  height: $header-height;
+  border-bottom: 1px solid $dark-pink;
+
+  .logo {
+    background: transparent url('/assets/header/logo.png') no-repeat top left;
+    background-size: 194px 45px;
+    height: 45px;
+    width: 194px;
+    position: absolute;
+    top: 15px;
+    left: 70px;
+  }
+
+  .search-link,
+  .menu-link {
+    position: absolute;
+    top: 25px;
+    height: 35px;
+    width: 35px;
+    background: transparent url('/assets/header/search-icon.png') top left / 35px 35px no-repeat;
+  }
+  .search-link {
+    left: 15px;
+
+  }
+  .menu-link {
+    right: 10px;
+    background-image: url('/assets/header/menu-icon.png');
+  }
+  .navigation-list {
+    display: none;
+  }
+
+}
+
+@include respond-to(big-mobile) {
+  .header {
+
+    $header-height: 170px;
+
+    height: $header-height;
+    border-bottom-width: 3px;
+
+    .logo {
+      background-size: 450px 105px;
+      height: 105px;
+      width: 450px;
+      top: 34px;
+      left: 162px;
+    }
+    .search-link,
+    .menu-link {
+      top: 57px;
+      height: 82px;
+      width: 82px;
+      background-size: 82px 82px;
+    }
+    .search-link {
+      left: 35px;
+    }
+    .menu-link {
+      right: 23px;
+    }
+  }
 }
