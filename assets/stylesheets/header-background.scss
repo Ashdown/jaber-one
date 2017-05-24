@@ -10,14 +10,14 @@
   z-index: -10;
 
   .left-part {
-    background: transparent url('/assets/header/background-overlay-mobile.png') no-repeat top left;
+    background: transparent url($image-folder + '/header/background-overlay-mobile.png') no-repeat top left;
     background-size: 320px $header-height;
     float: left;
     width: 320px;
     height: 100%;
   }
   .right-part {
-    background: transparent url('/assets/header/background-mobile.png') repeat top left;
+    background: transparent url($image-folder + '/header/background-mobile.png') repeat top left;
     background-size: 1px $header-height;
     overflow: hidden;
     height: 100%;

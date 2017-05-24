@@ -7,7 +7,7 @@
   border-bottom: 1px solid $dark-pink;
 
   .logo {
-    background: transparent url('/assets/header/logo.png') no-repeat top left;
+    background: transparent url($image-folder + '/header/logo.png') no-repeat top left;
     background-size: 194px 45px;
     height: 45px;
     width: 194px;
@@ -22,7 +22,7 @@
     top: 25px;
     height: 35px;
     width: 35px;
-    background: transparent url('/assets/header/search-icon.png') top left / 35px 35px no-repeat;
+    background: transparent url($image-folder + '/header/search-icon.png') top left / 35px 35px no-repeat;
   }
   .search-link {
     left: 15px;
@@ -30,7 +30,7 @@
   }
   .menu-link {
     right: 10px;
-    background-image: url('/assets/header/menu-icon.png');
+    background-image: url($image-folder + '/header/menu-icon.png');
   }
   .navigation-list {
     display: none;
