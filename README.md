@@ -1,20 +1,9 @@
-Sinatra Test App
-================
+Jaber One
+=========
 
-Simple Ruby application with the following features
-
-    * Sinatra
-    * Hosted on heroku
-    * Slim templates
-    * Sprockets and asset pipeline
-    * SCSS
-    * Jasmine testing
-    * rspec testing
-    * Feature testing
-    * Sample client
-    * Sample database integration (postgres)
+Simple app for building static html and css pages
     
-[Sinatra Test App on Heroku](https://guarded-caverns-3516.herokuapp.com/) 
+[Jaber One App on Heroku](https://quiet-tundra-23866.herokuapp.com/) 
     
 Helpful Commands
 ----------------
