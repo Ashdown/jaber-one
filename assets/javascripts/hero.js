@@ -1,4 +1,7 @@
 (function($) {
+
+    "use strict";
+
     $('.hero').slick({
         infinite: true,
         slidesToScroll: 1,

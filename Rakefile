@@ -1,8 +1,5 @@
 require './app'
-require 'jasmine'
 require 'jshintrb/jshinttask'
-
-load 'jasmine/tasks/jasmine.rake'
 
 desc 'js validation'
 Jshintrb::JshintTask.new :jshint do |task|
@@ -10,5 +7,5 @@ Jshintrb::JshintTask.new :jshint do |task|
   task.options = Jshintrb::Lint::DEFAULTS.merge({:predef => ['jQuery']})
 end
 
-task :default=>[:jshint, :'jasmine:ci']
+task :default=>[:jshint]
 
