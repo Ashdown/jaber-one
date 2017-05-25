@@ -8,4 +8,9 @@
         $this.toggleClass('open-menu');
     });
 
+    $this.find('.search-link').click(function(event){
+        event.preventDefault();
+        $this.find('.header-search').toggleClass('visible');
+    });
+
 })(jQuery);
