@@ -28,15 +28,12 @@
     top: 23px;
     height: 38px;
     width: 38px;
-    background: transparent url($image-folder + '/header/search-icon.png') top left / 35px 35px no-repeat;
   }
   .search-link {
     left: 15px;
-
   }
   .menu-link {
     right: 10px;
-    background-image: url($image-folder + '/header/menu-icon.png');
   }
 }
 
@@ -54,8 +51,10 @@
       right: 52px;
       bottom: 11px;
       left: auto;
+    }
+    .seach-image {
       height: 42px;
-      width: 42px;
+      width: auto;
     }
     .menu-link {
       display: none;
