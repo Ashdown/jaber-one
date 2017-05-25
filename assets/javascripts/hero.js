@@ -5,8 +5,16 @@
     $('.hero').slick({
         infinite: true,
         slidesToScroll: 1,
-        dots: true,
-        arrows: false
+        arrows: false,
+        mobileFirst: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    dots: true
+                }
+            }
+        ]
     });
 
 })(jQuery);
