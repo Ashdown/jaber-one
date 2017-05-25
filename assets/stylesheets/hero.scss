@@ -12,14 +12,6 @@
     overflow: hidden;
   }
 
-  .background-image {
-    position: absolute;
-    top: -70px;
-    right: -325px;
-    width: 892px;
-    height: auto;
-    z-index: -10;
-  }
   .title {
     margin-top: 200px;
     font-size: 24px;
@@ -48,5 +40,68 @@
     padding-bottom: 4px;
     border-bottom: 1px solid $orange;
   }
+  .background-image {
+    position: absolute;
+    top: -70px;
+    right: -325px;
+    width: 892px;
+    height: auto;
+    z-index: -10;
+  }
 
+}
+
+@include respond-to(desktop) {
+  .hero {
+    margin-top: -144px;
+    .hero-item {
+      height: 780px;
+
+    }
+    .title {
+      margin-top: 305px;
+      font-size: 56px;
+    }
+    .button-link-item {
+      display: inline-block;
+      margin: 0 22px;
+    }
+    .sign-up-link,
+    .call-back-link {
+      margin-top: 62px;
+      width: 224px;
+      font-size: 26px;
+      border-radius: 25px;
+      padding: 16px 0 0 0;
+      height: 34px;
+      border: 2px solid $dark-yellow;
+    }
+    .call-back-link {
+      background-color: rgba(0,0,0,0.5);
+      border: 2px solid $orange;
+      color: $white;
+      padding-bottom: 0;
+    }
+    .background-image {
+      top: 0;
+      right: 50%;
+      margin-right: -612px;
+      width: 1224px;
+    }
+
+  }
+}
+
+@include respond-to(max) {
+  .hero {
+    .hero-item {
+      height: 770px;
+    }
+    .background-image {
+      right: 0;
+      left: 0;
+      width: 100%;
+      margin-right: 0;
+    }
+  }
 }

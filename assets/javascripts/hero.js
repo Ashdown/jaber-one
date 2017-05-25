@@ -9,7 +9,7 @@
         mobileFirst: true,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1023,
                 settings: {
                     dots: true
                 }

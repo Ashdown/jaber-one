@@ -4,9 +4,11 @@
     <link href="assets/index.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-<%= erb :header %>
-<%= yield %>
-<%= erb :footer %>
+<div class="all-content">
+    <%= erb :header %>
+    <%= yield %>
+    <%= erb :footer %>
+</div>
 <script src="assets/index.js"></script>
 </body>
 </html>
