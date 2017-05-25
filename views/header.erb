@@ -1,9 +1,6 @@
 <header class="header">
 
     <div class="content">
-
-        <%= erb :'header/header_background' %>
-
         <a href="/">
             <img class="logo" src="/assets/header/logo.png" alt="Adflex Global Payment Processing"/>
         </a>
@@ -19,32 +16,7 @@
                 </a>
             </li>
         </ul>
-        <ul class="navigation-list">
-            <li>
-                <a href="/about-us">About us</a>
-            </li>
-            <li>
-                <a href="/news-and-media">News &amp; media</a>
-            </li>
-            <li>
-                <a href="#">Sign in</a>
-            </li>
-            <li>
-                <a href="#">Apply now</a>
-            </li>
-            <li>
-                <a href="/taking-payments">Taking payments</a>
-            </li>
-            <li>
-                <a href="/developers">Developers</a>
-            </li>
-            <li>
-                <a href="payment-partners">Payment partners</a>
-            </li>
-            <li>
-                <a href="/support-and-contact">Support &amp; contact</a>
-            </li>
-
-        </ul>
+        <%= erb :'header/navigation_list' %>
+        <%= erb :'header/header_background' %>
     </div>
 </header>

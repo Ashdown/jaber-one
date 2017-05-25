@@ -1,18 +1,17 @@
 .header {
 
-  $header-height: 72px;
-
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
-  height: $header-height;
+  height: 72px;
   border-bottom: 1px solid $dark-pink;
   z-index: 50;
 
   .content {
     position: relative;
-    height: $header-height;
+    height: 100%;
+    overflow: hidden;
   }
 
   .logo {
@@ -39,8 +38,27 @@
     right: 10px;
     background-image: url($image-folder + '/header/menu-icon.png');
   }
-  .navigation-list {
-    display: none;
-  }
+}
 
+@include respond-to(desktop) {
+  .header {
+    height: 141px;
+    border-bottom-width: 3px;
+    .logo {
+      height: 65px;
+      top: 50px;
+      left: 57px;
+    }
+    .search-link {
+      top: auto;
+      right: 52px;
+      bottom: 11px;
+      left: auto;
+      height: 42px;
+      width: 42px;
+    }
+    .menu-link {
+      display: none;
+    }
+  }
 }
