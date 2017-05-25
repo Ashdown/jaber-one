@@ -1,5 +1,4 @@
 .hero {
-  margin-top: -74px;
   text-align: center;
   border-bottom: 2px solid $purple;
 
@@ -53,7 +52,6 @@
 
 @include respond-to(desktop) {
   .hero {
-    margin-top: -144px;
     .hero-item {
       height: 780px;
 

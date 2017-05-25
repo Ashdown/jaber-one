@@ -23,3 +23,21 @@
   }
 
 }
+
+@include respond-to(desktop) {
+  .social-media-links {
+    position: absolute;
+    margin-top: 0;
+    top: 74px;
+    right: 0;
+    left: 0;
+    text-align: center;
+    .link {
+      height: 60px;
+      width: 60px;
+      background-size: 60px 60px;
+      margin: 0 13px;
+    }
+  }
+
+}

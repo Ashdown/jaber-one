@@ -20,5 +20,21 @@
     top: 1px;
     margin: 0 10px;
   }
+}
 
+@include respond-to(desktop) {
+  .footer-links {
+    padding-top: 10px;
+    height: 26px;
+    .link {
+      color: $white;
+      font-size: 14px;
+    }
+    .border {
+      margin: 0 12px;
+      height: 12px;
+      top: 2px;
+      background-color: $white;
+    }
+  }
 }

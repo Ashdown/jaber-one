@@ -24,3 +24,29 @@
     color: $black;
   }
 }
+
+@include respond-to(desktop) {
+  .footer {
+    padding: 165px 0 36px 0;
+    position: relative;
+
+    .pci-logo {
+      position: absolute;
+      right: 80px;
+      bottom: 60px;
+      width: 150px;
+    }
+    .logo-link {
+      display: inline-block;
+      margin-top: 30px;
+    }
+    .logo {
+      height: 51px;
+    }
+    .copyright-information {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+  }
+}

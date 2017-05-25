@@ -5,13 +5,15 @@
   right: 0;
   left: 0;
   height: 72px;
-  border-bottom: 1px solid $dark-pink;
   z-index: 50;
 
   .content {
     position: relative;
     height: 100%;
     overflow: hidden;
+    max-width: 1364px;
+    margin: 0 auto;
+    border-bottom: 1px solid $dark-pink;
   }
 
   .logo {
@@ -40,7 +42,9 @@
 @include respond-to(desktop) {
   .header {
     height: 141px;
-    border-bottom-width: 3px;
+    .content {
+      border-bottom-width: 3px;
+    }
     .logo {
       height: 65px;
       top: 50px;

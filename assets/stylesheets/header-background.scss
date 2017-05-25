@@ -24,15 +24,11 @@
   }
 }
 
-@include respond-to(big-mobile) {
+@include respond-to(desktop) {
   .header-background {
-
-    $header-height: 170px;
-
     .left-part {
-      background-size: 750px $header-height;
-      width: 750px;
+      width: 560px;
+      background-size: 560px 141px;
     }
   }
 }
-
