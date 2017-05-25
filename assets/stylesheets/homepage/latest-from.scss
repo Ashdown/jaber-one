@@ -1,0 +1,90 @@
+.latest-from {
+  overflow: hidden;
+  background-color: $purple;
+  .title {
+    color: $white;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 72px;
+  }
+  .news-articles {
+    margin-top: 74px;
+    padding-bottom: 66px;
+  }
+  .article {
+    height: 245px;
+    width: 245px;
+    position: relative;
+    overflow: hidden;
+    margin-right: 18px;
+  }
+  .article-title {
+    font-size: 18px;
+    margin: 163px 120px 0 15px;
+    color: $white;
+    position: relative;
+  }
+  .article-title,
+  .type-icon,
+  .link,
+  .chevron{
+    z-index: 10;
+  }
+  .type-icon,
+  .link,
+  .image,
+  .chevron,
+  .circle{
+    position: absolute;
+  }
+  .type-icon {
+    width: 32px;
+    height: auto;
+    top: 13px;
+    right: 15px;
+  }
+  .link,
+  .image {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .circle {
+    $circle-height: 300px;
+    height: $circle-height;
+    width: $circle-height;
+    border-radius: $circle-height;
+    background-color: rgba(0,0,0,0.5);
+    top: 115px;
+    left: -63px;
+    z-index: 5;
+  }
+  .link {
+    display: inline-block;
+  }
+  .image {
+    height: 100%;
+    width: auto;
+  }
+  .chevron {
+    bottom: 24px;
+    right: 12px;
+    height: 36px;
+    width: auto;
+  }
+  .slick-dots {
+    top: -46px;
+    bottom: auto;
+    li,
+    li button{
+      width: 12px;
+      height: 12px;
+    }
+    li {
+      margin: 0 4px;
+    }
+
+  }
+
+}
