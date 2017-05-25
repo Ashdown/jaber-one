@@ -1,0 +1,12 @@
+.showcase {
+  background: #3c2938 url($image-folder + '/homepage/showcase/mobile.png') top center / 320px 2022px no-repeat;
+  height: 2022px;
+}
+
+@include respond-to(desktop) {
+  .showcase {
+    background: #3c2938 url($image-folder + '/homepage/showcase/desktop.png') top center / 1365px 732px no-repeat;
+    height: 732px;
+  }
+
+}
