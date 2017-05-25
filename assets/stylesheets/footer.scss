@@ -2,24 +2,25 @@
   background-color: $white;
   text-align: center;
 
-  .accreditation-text {
-    margin-top: 15px;
-    color: $purple;
-    font-family: $ag-light;
-    font-size: 9px;
+  .pci-logo {
+    margin-top: 16px;
+    width: 130px;
+    height: auto;
+  }
+
+  .logo-link {
+    display: block;
+    margin-top: 20px;
   }
 
   .logo {
-    display: block;
-    margin: 20px auto 0 auto;
-    height: 38px;
-    width: 130px;
-    background: transparent url($image-folder + '/footer/logo.png') top left / 130px 38px no-repeat;
+    height: 42px;
+    width: auto;
   }
 
   .copyright-information {
     margin-top: 16px;
-    font-size: 9px;
+    font-size: 8px;
     color: $black;
   }
 }
