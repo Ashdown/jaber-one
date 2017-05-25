@@ -44,34 +44,3 @@
   }
 
 }
-
-@include respond-to(big-mobile) {
-  .header {
-
-    $header-height: 170px;
-
-    height: $header-height;
-    border-bottom-width: 3px;
-
-    .logo {
-      background-size: 450px 105px;
-      height: 105px;
-      width: 450px;
-      top: 34px;
-      left: 162px;
-    }
-    .search-link,
-    .menu-link {
-      top: 57px;
-      height: 82px;
-      width: 82px;
-      background-size: 82px 82px;
-    }
-    .search-link {
-      left: 35px;
-    }
-    .menu-link {
-      right: 23px;
-    }
-  }
-}
