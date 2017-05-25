@@ -15,9 +15,9 @@
 @import 'main';
 @import 'links-list';
 @import 'header';
-@import 'navigation-list';
-@import 'header-background';
+@import 'header/navigation-list';
+@import 'header/header-background';
 @import 'footer';
-@import 'footer-links';
-@import 'social-media-links';
-@import 'hero';
+@import 'footer/footer-links';
+@import 'footer/social-media-links';
+@import 'homepage/hero';
