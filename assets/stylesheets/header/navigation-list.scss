@@ -1,13 +1,65 @@
 .navigation-list {
-  display: none;
+  background-color: rgba(0,0,0,0.75);
+  padding: 30px 0 20px 0;
+  position: fixed;
+  top: 73px;
+  right: -100%;
+  width: 100%;
+  z-index: 100;
+  text-align: center;
+  @include transition(right, 0.3s, linear);
+
+  .link {
+    display: inline-block;
+  }
+
+  .small-link {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .button-link {
+    margin: 10px 9px 0 9px;
+    padding-top: 12px;
+    font-size: 14px;
+    height: 24px;
+    border-radius: 18px;
+    width: 110px;
+    text-align:center;
+  }
+  .sign-in-link {
+    color: $white;
+    background-color: $orange;
+  }
+  .apply-now-link {
+    color: $black;
+    background-color: $dark-yellow;
+  }
+  .bottom-links {
+    margin-top: 10px;
+    .link {
+      font-size: 20px;
+      line-height: 22px;
+      margin: 10px 18px 0 18px;
+    }
+  }
+
+}
+
+.open-menu .navigation-list {
+  right: 0;
 }
 
 @include respond-to(desktop) {
   .navigation-list {
-    display: block;
+
     margin: 29px 43px 0 0;
     color: $white;
     float: right;
+    background-color: transparent;
+    padding: 0;
+    position: static;
+    max-width: 1000px;
 
     .top-links,
     .bottom-links {
@@ -15,11 +67,7 @@
     }
 
     .nav-item {
-      display: inline-block;
       float: left;
-    }
-    .link {
-      display: inline-block;
     }
     .small-link {
       font-size: 14px;
@@ -34,22 +82,9 @@
       top: 2px;
     }
     .button-link {
-      margin: 0 9px;
-      padding-top: 12px;
-      font-size: 14px;
-      height: 24px;
-      border-radius: 18px;
-      width: 110px;
-      text-align:center;
+      margin-top: 0;
     }
-    .sign-in-link {
-      color: $white;
-      background-color: $orange;
-    }
-    .apply-now-link {
-      color: $black;
-      background-color: $dark-yellow;
-    }
+
     .taking-payments-item {
       clear: left;
     }
@@ -59,9 +94,7 @@
         height: 22px;
       }
       .link {
-        font-size: 20px;
-        line-height: 22px;
-        margin: 0 18px;
+        margin-top: 0;
       }
       .link-border {
         height: 18px;
