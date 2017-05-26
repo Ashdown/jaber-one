@@ -1,7 +1,19 @@
 (function($){
     'use strict';
 
-    var $this  = $('.header');
+    var $this  = $('.header'),
+        searchBarActive = false;
+
+    function openSearch() {
+        $this.find('.header-search').addClass('visible');
+        $this.find('.keyword-field').focus();
+        searchBarActive = true;
+    }
+
+    function closeSearch() {
+        $this.find('.header-search').removeClass('visible');
+        searchBarActive = false;
+    }
 
     $this.find('.menu-link').click(function(event){
         event.preventDefault();
@@ -9,15 +21,15 @@
 
     });
 
-    var searchBarActive = false;
-
-    $this.find('.search-link').click(function(event){
-        event.preventDefault();
-        $this.find('.header-search').toggleClass('visible');
+    $('.all-content').on('click', function() {
+        closeSearch();
+    }).on('click', '.search-link', function(event) {
+        event.stopPropagation();
         if(!searchBarActive) {
-            $this.find('.keyword-field').focus();
+            openSearch();
+        } else {
+            closeSearch();
         }
-        searchBarActive = !searchBarActive;
     });
 
 })(jQuery);
