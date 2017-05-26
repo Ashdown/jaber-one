@@ -1,0 +1,33 @@
+.process-payments-hero {
+  .hero-nav-menu {
+    display: none;
+  }
+  .hero-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 490px;
+  }
+  .title {
+    margin-top: 172px;
+  }
+  .rounded-link,
+  .transparent-link {
+    display: inline-block;
+    border: 1px solid $white;
+    height: 30px;
+    width: 165px;
+    font-size: 16px;
+    padding-top: 17px;
+    border-radius: 25px;
+  }
+  .rounded-link {
+    margin-top: 45px;
+    background-color: $dark-yellow;
+    border-color: $dark-yellow;
+    color: $black;
+  }
+  .transparent-link {
+    margin-top: 20px;
+    background-color: $button-transparency;
+  }
+}

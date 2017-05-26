@@ -1,0 +1,14 @@
+.introduction {
+  text-align: center;
+  .main-title {
+    font-size: 26px;
+    color: $dark-pink;
+    margin-top: 50px;
+  }
+  .para {
+    font-size: 18px;
+    color: $black;
+    margin-top: 20px;
+    line-height: 1.2em;
+  }
+}
