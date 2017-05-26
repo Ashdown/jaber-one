@@ -49,6 +49,21 @@
 
 }
 
+@include respond-to(tablet) {
+  .hero {
+    .hero-item {
+      height: 516px;
+    }
+    .background-image {
+      $image-width: 808px;
+      margin-right: -($image-width/2);
+      width: $image-width;
+      right: 50%;
+      top: 0;
+    }
+  }
+}
+
 @include respond-to(desktop) {
   .hero {
     .hero-item {
