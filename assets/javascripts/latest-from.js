@@ -19,7 +19,7 @@
                 slickCreated = true;
                 $this.slick(slickSettings);
             }
-            return
+            return;
         }
         if(slickCreated) {
             slickCreated = false;
