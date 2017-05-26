@@ -2,7 +2,7 @@
 
     "use strict";
 
-    $('.hero').slick({
+    $('.homepage-hero').slick({
         infinite: true,
         slidesToScroll: 1,
         arrows: false,

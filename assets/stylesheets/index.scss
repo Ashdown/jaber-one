@@ -14,14 +14,19 @@
 
 @import 'main';
 @import 'links-list';
+
 @import 'header';
 @import 'header/navigation-list';
 @import 'header/header-background';
 @import 'header/header-search';
+
 @import 'footer';
 @import 'footer/footer-links';
 @import 'footer/social-media-links';
-@import 'homepage/hero';
+
+@import 'hero';
+
+@import 'homepage/homepage-hero';
 @import 'homepage/showcase';
 @import 'homepage/latest-from';
 @import 'homepage/news-articles';

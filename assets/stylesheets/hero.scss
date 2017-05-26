@@ -1,0 +1,72 @@
+.hero {
+  text-align: center;
+
+  .hero-content {
+    height: 570px;
+    width: 100%;
+    position: relative;
+    padding: 0 30px;
+    overflow: hidden;
+  }
+
+  .title {
+    font-size: 24px;
+    color: $white;
+    line-height: 1.2em;
+  }
+
+  .background-image {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    height: auto;
+    z-index: -10;
+    $image-width: 1040px;
+    margin-right: -($image-width/2);
+    width: $image-width;
+  }
+}
+
+@include respond-to(tablet) {
+  .hero {
+    .hero-content {
+      height: 516px;
+    }
+    .background-image {
+      $image-width: 1024px;
+      margin-right: -($image-width/2);
+      width: $image-width;
+      right: 50%;
+    }
+  }
+}
+
+@include respond-to(desktop) {
+  .hero {
+    .hero-content {
+      height: 840px;
+
+    }
+    .title {
+      margin: 0 280px 0 280px;
+      font-size: 56px;
+      line-height: 1;
+    }
+    .background-image {
+      $image-width: 1324px;
+      margin-right: -($image-width/2);
+      width: $image-width;
+    }
+  }
+}
+
+@include respond-to(max) {
+  .hero {
+    .background-image {
+      right: 0;
+      left: 0;
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+}
