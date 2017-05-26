@@ -1,0 +1,32 @@
+.hero-nav-menu {
+  display: none;
+}
+@include respond-to(desktop) {
+  .hero-nav-menu {
+    display: block;
+    position: absolute;
+    top: 170px;
+    left: 55px;
+    .hero-nav-item {
+      float: left;
+    }
+    .link {
+      font-size: 16px;
+      display: inline-block;
+      line-height: 20px;
+    }
+    .border {
+      height: 16px;
+      width: 1px;
+      position: relative;
+      top: 2px;
+      display: inline-block;
+      margin-left: 12px;
+      margin-right: 12px;
+      background-color: $white;
+
+    }
+
+  }
+
+}

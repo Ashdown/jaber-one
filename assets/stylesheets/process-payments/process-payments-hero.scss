@@ -1,7 +1,4 @@
 .process-payments-hero {
-  .hero-nav-menu {
-    display: none;
-  }
   .hero-content {
     padding-left: 15px;
     padding-right: 15px;
@@ -29,5 +26,25 @@
   .transparent-link {
     margin-top: 20px;
     background-color: $button-transparency;
+  }
+}
+
+@include respond-to(desktop) {
+  .process-payments-hero {
+    .hero-content {
+      height: 524px;
+    }
+    .title {
+      margin-top: 235px
+    }
+    .button-link-item {
+      display: inline-block;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .rounded-link,
+    .transparent-link {
+      margin-top: 75px;
+    }
   }
 }
