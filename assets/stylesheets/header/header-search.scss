@@ -5,7 +5,6 @@
   background-color: rgba(0,0,0,0.75);
   width: 100%;
   max-height: 0;
-  opacity: 0;
   overflow: hidden;
   @include transition(all, 0.2s, linear);
 
@@ -51,4 +50,42 @@
   }
 
 
+}
+
+@include respond-to(desktop) {
+  .header-search {
+    position: absolute;
+    background-color: transparent;
+    right: 52px;
+    width: 0;
+    left: auto;
+    top: 92px;
+    max-height: none;
+    opacity: 1;
+    &.visible {
+      width: 800px;
+    }
+    .bordered-container {
+      margin: 0;
+      height: 28px;
+      padding-top: 8px;
+      background-color: $white;
+    }
+    .keyword-field {
+      color: $black;
+      &::placeholder {
+        color: $unimportant-grey;
+      }
+    }
+    .submit-button {
+      $button-height: 38px;
+      top: -1px;
+      right: -1px;
+      background-color: $black;
+      height: $button-height;
+      width: $button-height;
+      background-size: $button-height $button-height;
+      border-radius: $button-height / 2;
+    }
+  }
 }
