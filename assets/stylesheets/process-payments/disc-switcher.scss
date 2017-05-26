@@ -1,0 +1,69 @@
+.disc-switcher {
+  text-align: center;
+  position: relative;
+  padding-bottom: 100px;
+  .disc-item {
+    display: inline-block;
+    width: 105px;
+    margin: 0 15px;
+
+  }
+  .disc-link {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 35px;
+    display: block;
+    color: $black;
+  }
+  .icon {
+    $icon-height: 105px;
+    width: $icon-height;
+    height: $icon-height;
+    border-radius: $icon-height / 2;
+    border: 2px solid $black;
+    display: block;
+    margin-top: 14px;
+  }
+  .connector-line {
+    width: 2px;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+    background-color: transparent;
+  }
+
+  .content {
+    display: none;
+    position: absolute;
+    top: 260px;
+    right: 0;
+
+  }
+
+  .disc-selected .content {
+    display: block;
+  }
+
+  @mixin disc-color($classname, $color) {
+    .disc-item.#{$classname} {
+      .disc-link {
+        color: $color;
+      }
+      .icon {
+        border-color: $color;
+      }
+      &.disc-selected {
+        .icon,
+        .connector-line {
+          background: $color;
+        }
+      }
+      .content {
+        background-color: $color;
+      }
+    }
+  }
+
+  @include disc-color(turquoise, $dark-turquoise);
+  @include disc-color(pink, $dark-pink);
+}
