@@ -32,7 +32,7 @@
     background-color: transparent;
   }
 
-  .content {
+  .container {
     display: none;
     position: absolute;
     top: 260px;
@@ -40,57 +40,8 @@
 
   }
 
-  .disc-selected .content {
+  .disc-selected .container {
     display: block;
-  }
-
-  .content-container {
-    padding: 55px 20px 50px 20px;
-    position: relative;
-  }
-
-  .close-link {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    background: transparent url($image-folder + '/processing-payments/chevron.png') top left / 35px 35px no-repeat;
-    height: 35px;
-    width: 35px;
-  }
-
-  .content-header,
-  .introduction,
-  .para {
-    color: $white;
-  }
-
-  .content-header {
-    background: transparent url($image-folder + '/processing-payments/mag-glass.png') top center / 91px 69px no-repeat;
-    padding-top: 75px;
-    font-size: 28px;
-  }
-
-  .introduction,
-  .para {
-    line-height: 1.2em;
-  }
-
-  .introduction {
-    font-size: 18px;
-    margin-top: 20px;
-  }
-
-  .para {
-    font-size: 16px;
-    margin-top: 24px;
-  }
-
-  .yellow-button-link {
-    margin-top: 32px;
-  }
-
-  .orange-button-link {
-    margin-top: 20px;
   }
 
   @mixin disc-color($classname, $color) {
@@ -107,7 +58,7 @@
           background: $color;
         }
       }
-      .content {
+      .container {
         background-color: $color;
       }
     }
@@ -115,4 +66,38 @@
 
   @include disc-color(turquoise, $dark-turquoise);
   @include disc-color(pink, $dark-pink);
+}
+
+@include respond-to(desktop) {
+  .disc-switcher {
+    text-align: left;
+    padding-bottom: 900px;
+    .disc-list {
+      width: 945px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .disc-item {
+      margin-left: 60px;
+      margin-right: 60px;
+      width: 195px;
+    }
+    .disc-link {
+      font-size: 28px;
+      margin-top: 55px;
+    }
+    .icon {
+      $icon-height: 184px;
+      width: $icon-height;
+      height: $icon-height;
+      border-radius: $icon-height / 2;
+      border-width: 5px;
+    }
+    .connector-link {
+      width: 3px;
+    }
+    .container {
+      top: 405px;
+    }
+  }
 }
