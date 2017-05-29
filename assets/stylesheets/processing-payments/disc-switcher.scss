@@ -40,7 +40,7 @@
 
   }
 
-  .disc-selected .container {
+  .disc-item.selected .container {
     display: block;
   }
 
@@ -52,7 +52,7 @@
       .icon {
         border-color: $color;
       }
-      &.disc-selected {
+      &.selected {
         .icon,
         .connector-line {
           background: $color;
