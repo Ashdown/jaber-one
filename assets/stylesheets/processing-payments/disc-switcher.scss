@@ -1,7 +1,9 @@
 .disc-switcher {
   text-align: center;
   position: relative;
-  padding-bottom: 100px;
+  padding-bottom: 0;
+  overflow: hidden;
+  @include transition(padding-bottom, 0.2s, ease);
   .disc-item {
     display: inline-block;
     width: 105px;
@@ -35,7 +37,7 @@
   .container {
     display: none;
     position: absolute;
-    top: 260px;
+    top: 262px;
     right: 0;
 
   }
