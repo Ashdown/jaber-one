@@ -44,6 +44,55 @@
     display: block;
   }
 
+  .content-container {
+    padding: 55px 20px 50px 20px;
+    position: relative;
+  }
+
+  .close-link {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: transparent url($image-folder + '/processing-payments/chevron.png') top left / 35px 35px no-repeat;
+    height: 35px;
+    width: 35px;
+  }
+
+  .content-header,
+  .introduction,
+  .para {
+    color: $white;
+  }
+
+  .content-header {
+    background: transparent url($image-folder + '/processing-payments/mag-glass.png') top center / 91px 69px no-repeat;
+    padding-top: 75px;
+    font-size: 28px;
+  }
+
+  .introduction,
+  .para {
+    line-height: 1.2em;
+  }
+
+  .introduction {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .para {
+    font-size: 16px;
+    margin-top: 24px;
+  }
+
+  .yellow-button-link {
+    margin-top: 32px;
+  }
+
+  .orange-button-link {
+    margin-top: 20px;
+  }
+
   @mixin disc-color($classname, $color) {
     .disc-item.#{$classname} {
       .disc-link {

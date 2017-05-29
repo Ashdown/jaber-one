@@ -14,6 +14,8 @@
 
 @import 'main';
 @import 'links-list';
+@import 'yellow-button-link';
+@import 'orange-button-link';
 
 @import 'header';
 @import 'header/navigation-list';
@@ -31,7 +33,7 @@
 @import 'homepage/latest-from';
 @import 'homepage/news-articles';
 
-@import 'process-payments/process-payments-hero';
-@import 'process-payments/hero-nav-menu';
-@import 'process-payments/introduction';
-@import 'process-payments/disc-switcher';
+@import 'processing-payments/processing-payments-hero';
+@import 'processing-payments/hero-nav-menu';
+@import 'processing-payments/introduction';
+@import 'processing-payments/disc-switcher';

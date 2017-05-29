@@ -1,4 +1,4 @@
-.process-payments-hero {
+.processing-payments-hero {
   .hero-content {
     padding-left: 15px;
     padding-right: 15px;
@@ -30,7 +30,7 @@
 }
 
 @include respond-to(desktop) {
-  .process-payments-hero {
+  .processing-payments-hero {
     .hero-content {
       height: 524px;
     }
