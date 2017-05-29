@@ -1,6 +1,7 @@
 .disc-content {
   padding: 55px 20px 50px 20px;
   position: relative;
+  overflow: hidden;
   .close-link {
     position: absolute;
     top: 15px;
@@ -44,6 +45,8 @@
   .orange-button-link {
     margin-top: 20px;
   }
+
+
 }
 
 @include respond-to(desktop) {

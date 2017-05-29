@@ -1,7 +1,6 @@
 .disc-switcher {
   text-align: center;
   position: relative;
-  padding-bottom: 0;
   overflow: hidden;
   @include transition(padding-bottom, 0.2s, ease);
   .disc-item {
@@ -39,7 +38,6 @@
     position: absolute;
     top: 262px;
     right: 0;
-
   }
 
   .disc-item.selected .container {
@@ -68,6 +66,31 @@
 
   @include disc-color(turquoise, $dark-turquoise);
   @include disc-color(pink, $dark-pink);
+
+  .white-button-link {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    opacity: 1;
+    @include transition(opacity, 0.2s, ease);
+  }
+
+  .disc-content {
+    max-height: 200px;
+    overflow: hidden;
+    @include transition(max-height, 0.2s, ease);
+  }
+
+  .container.open {
+
+    .disc-content {
+      max-height: 2000px;
+    }
+
+    .white-button-link{
+      opacity: 0;
+    }
+  }
+
 }
 
 @include respond-to(desktop) {
@@ -100,6 +123,12 @@
     }
     .container {
       top: 405px;
+    }
+    .read-more-link {
+      display: none;
+    }
+    .disc-content {
+      max-height: none;
     }
   }
 }
