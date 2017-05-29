@@ -4,7 +4,6 @@
     var $this = $('.disc-switcher');
 
     function setContainerHeight($currentContainer) {
-        console.log('set height', $currentContainer.height());
         $this.css('padding-bottom', $currentContainer.height());
     }
 
