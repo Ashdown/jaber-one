@@ -1,8 +1,10 @@
 .orange-button-link {
   display: inline-block;
+  height: 32px;
   font-size: 16px;
   color: $white;
   padding: 18px 45px 0 45px;
+  border-radius: 25px;
   border: 1px solid $orange;
   background-color: $orange;
   @include transition(background-color, 0.1s, linear);

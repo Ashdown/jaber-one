@@ -4,8 +4,15 @@
   font-size: 16px;
   padding: 18px 45px 0 45px;
   border-radius: 25px;
-  background-color: $white;
-  color: $black;
+  background-color: $button-transparency;
+  color: $white;
+  border: 1px solid $white;
+  @include transition(all, 0.1s, linear);
+  &:hover {
+    background-color: $white;
+    color: $black;
+  }
+
 }
 
 @include respond-to(desktop) {
@@ -15,6 +22,6 @@
     border-radius: 33px;
     padding: 20px 0 0 0;
     height: 46px;
-    border: 2px solid $white;
+    border-width: 2px;
   }
 }

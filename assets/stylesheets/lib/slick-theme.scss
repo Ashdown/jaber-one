@@ -41,10 +41,15 @@
   color: transparent;
   border: 0;
   outline: none;
-  background-color: $off-white;
+  opacity: 0.75;
+  background-color: $white;
+  @include transition(opacity, 0.1s, linear);
+  &:hover {
+    opacity: 1;
+  }
 }
 .slick-dots li.slick-active button {
-  background-color: $white;
+  opacity: 1;
 }
 .slick-dots li button:hover,
 .slick-dots li button:focus
