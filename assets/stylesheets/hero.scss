@@ -1,19 +1,22 @@
 .hero {
   text-align: center;
-
   .hero-content {
     height: 570px;
     position: relative;
     overflow: hidden;
     padding: 0 30px;
   }
-
   .title {
     font-size: 24px;
     color: $white;
     line-height: 1.2em;
   }
-
+  .yellow-button-link,
+  .white-button-link {
+    padding-left: 0;
+    padding-right: 0;
+    width: 200px;
+  }
   .background-image {
     position: absolute;
     top: 0;
@@ -50,6 +53,10 @@
       margin: 0 280px 0 280px;
       font-size: 56px;
       line-height: 1;
+    }
+    .yellow-button-link,
+    .white-button-link {
+      width: 224px;
     }
     .background-image {
       $image-width: 1324px;

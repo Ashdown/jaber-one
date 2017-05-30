@@ -7,25 +7,16 @@
   .title {
     margin-top: 172px;
   }
-  .rounded-link,
-  .transparent-link {
-    display: inline-block;
-    border: 1px solid $white;
-    height: 30px;
-    width: 165px;
-    font-size: 16px;
-    padding-top: 17px;
-    border-radius: 25px;
-  }
-  .rounded-link {
+
+  .yellow-button-link {
     margin-top: 45px;
-    background-color: $dark-yellow;
-    border-color: $dark-yellow;
-    color: $black;
+    padding-left: 0;
+    padding-right: 0;
+    width: 200px;
   }
-  .transparent-link {
+  .white-button-link {
     margin-top: 20px;
-    background-color: $button-transparency;
+    width: 200px;
   }
 }
 
@@ -42,9 +33,10 @@
       margin-left: 10px;
       margin-right: 10px;
     }
-    .rounded-link,
-    .transparent-link {
+    .yellow-button-link,
+    .white-button-link {
       margin-top: 75px;
+      width: 224px;
     }
   }
 }
