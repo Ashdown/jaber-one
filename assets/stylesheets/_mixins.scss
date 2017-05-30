@@ -22,7 +22,7 @@
   }
 
   @else if $device == max {
-    @media (min-width: 1224px) {
+    @media (min-width: 1366px) {
       @content
     }
   }
