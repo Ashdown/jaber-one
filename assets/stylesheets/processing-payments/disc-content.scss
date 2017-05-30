@@ -38,14 +38,10 @@
     margin-top: 24px;
   }
 
-  .yellow-button-link {
-    margin-top: 32px;
-  }
-
-  .orange-button-link {
+  .white-button-link {
     margin-top: 20px;
+    min-width: 110px;
   }
-
 
 }
 
@@ -75,8 +71,7 @@
     .button-item {
       display: inline-block;
     }
-    .yellow-button-link,
-    .orange-button-link {
+    .white-button-link {
       margin: 75px 20px 0 20px;
     }
 

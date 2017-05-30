@@ -20,7 +20,7 @@
         var $container = $(event.currentTarget).closest('.container');
         $container.addClass('open');
         window.setTimeout(function() {
-            $container.find('.white-button-link').css('display', 'none');
+            $container.find('.read-more-link').css('display', 'none');
             setContainerHeight($container);
         }, 200);
 

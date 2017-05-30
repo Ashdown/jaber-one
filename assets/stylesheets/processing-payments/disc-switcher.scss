@@ -67,7 +67,7 @@
   @include disc-color(turquoise, $dark-turquoise);
   @include disc-color(pink, $dark-pink);
 
-  .white-button-link {
+  .read-more-link {
     margin-top: 20px;
     margin-bottom: 50px;
     opacity: 1;
@@ -86,7 +86,7 @@
       max-height: 2000px;
     }
 
-    .white-button-link{
+    .read-more-link{
       opacity: 0;
     }
   }
