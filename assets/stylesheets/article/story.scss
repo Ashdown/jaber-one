@@ -9,6 +9,18 @@
     $color: $maroon;
     line-height: 1.2em;
   }
+
+  $max-content-height: 336px;
+
+  .story-container {
+    max-height: $max-content-height;
+    overflow: hidden;
+  }
+  .story-content {
+    position: relative;
+    top: 0;
+    @include transition(top, 0.4s, linear);
+  }
   .para {
     font-size: 14px;
     line-height: 1.2em;
@@ -32,6 +44,15 @@
     padding-left: 210px;
     padding-right: 210px;
     text-align: left;
+
+    .story-container {
+      max-height: none;
+
+    }
+    .story-content {
+      position: static;
+    }
+
     .main-title {
       font-size: 48px;
       margin-top: 45px;

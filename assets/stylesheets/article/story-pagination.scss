@@ -8,6 +8,9 @@
     position: relative;
     top: 14px;
     display: inline-block;
+    &.hidden {
+      display: none;
+    }
   }
 
   .text {
