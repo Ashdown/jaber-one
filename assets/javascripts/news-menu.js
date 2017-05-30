@@ -15,6 +15,6 @@
     $this.find('.menu-link').on('click', function(event) {
         event.preventDefault();
         $this.toggleClass('open');
-    })
+    });
 
 })(jQuery);

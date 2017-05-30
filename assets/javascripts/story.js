@@ -1,9 +1,12 @@
 (function($){
+
+    'use strict';
+
     var $this = $('.story'),
         pageHeight = 336,
         offset = 0,
         maxHeight = $this.find('.story-content').height(),
-        $pagination = $this.find('.story-pagination');
+        $pagination = $this.find('.story-pagination'),
         $previous =  $pagination.find('.previous'),
         $next = $pagination.find('.next'),
         pageCount = Math.ceil(maxHeight / pageHeight),
@@ -27,14 +30,14 @@
     $next.on('click', function(event) {
         event.preventDefault();
         $this.find('.story-content').css('top', offset -= pageHeight);
-        pageNumber++;
+        pageNumber += 1;
         updateNavigation();
     });
 
     $previous.on('click', function(event) {
         event.preventDefault();
         $this.find('.story-content').css('top', offset += pageHeight);
-        pageNumber--;
+        pageNumber -= 1;
         updateNavigation();
     });
 
