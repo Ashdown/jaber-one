@@ -1,0 +1,30 @@
+.story-pagination {
+  position: relative;
+  margin-top: 20px;
+  text-align: right;
+  font-size: 16px;
+
+  .link {
+    position: relative;
+    top: 14px;
+    display: inline-block;
+  }
+
+  .text {
+    margin: 0 8px;
+  }
+
+  .icon {
+    $height: 40px;
+    height: $height;
+    width: $height;
+    border-radius: $height / 2;
+    background-color: $maroon;
+    opacity: 0.75;
+    display: inline-block;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+}
