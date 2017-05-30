@@ -1,6 +1,6 @@
 .navigation-list {
   background-color: rgba(0,0,0,0.75);
-  padding: 30px 0 20px 0;
+  padding: 30px 0 30px 0;
   position: fixed;
   top: 73px;
   right: -100%;
@@ -15,32 +15,34 @@
 
   .small-link {
     font-size: 20px;
-    margin-top: 10px;
+    margin-top: 15px;
   }
 
-  .button-link {
-    margin: 10px 9px 0 9px;
-    padding-top: 12px;
+  .small-link,
+  .bottom-links .link {
+    opacity: 0.75;
+    @include transition(opacity, 0.1s, linear);
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .orange-button-link,
+  .yellow-button-link{
+    margin: 15px 9px 0 9px;
+    padding: 11px 0 0 0;
     font-size: 14px;
     height: 24px;
     border-radius: 18px;
     width: 110px;
     text-align:center;
   }
-  .sign-in-link {
-    color: $white;
-    background-color: $orange;
-  }
-  .apply-now-link {
-    color: $black;
-    background-color: $dark-yellow;
-  }
   .bottom-links {
     margin-top: 10px;
     .link {
       font-size: 20px;
       line-height: 22px;
-      margin: 10px 18px 0 18px;
+      margin: 15px 18px 0 18px;
     }
   }
 
@@ -81,7 +83,8 @@
       position: relative;
       top: 2px;
     }
-    .button-link {
+    .orange-button-link,
+    .yellow-button-link{
       margin-top: 0;
     }
 

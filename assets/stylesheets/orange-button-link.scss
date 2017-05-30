@@ -1,9 +1,14 @@
 .orange-button-link {
   display: inline-block;
   font-size: 16px;
-  color: $orange;
-  padding-bottom: 4px;
-  border-bottom: 1px solid $orange;
+  color: $white;
+  padding: 18px 45px 0 45px;
+  border: 1px solid $orange;
+  background-color: $orange;
+  @include transition(background-color, 0.1s, linear);
+  &:hover {
+    background-color: $button-transparency;
+  }
 }
 
 @include respond-to(desktop) {
@@ -14,7 +19,7 @@
     padding: 20px 0 0 0;
     height: 46px;
     background-color: $button-transparency;
-    border: 2px solid $orange;
+    border-width: 2px;
     color: $white;
   }
 }

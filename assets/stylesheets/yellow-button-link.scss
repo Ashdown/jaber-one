@@ -6,6 +6,13 @@
   border-radius: 25px;
   background-color: $dark-yellow;
   color: $black;
+  border: 2px solid $dark-yellow;
+  @include transition(all, 0.1s, linear);
+  &:hover {
+    color: $white;
+    background-color: $button-transparency;
+  }
+
 }
 
 @include respond-to(desktop) {
@@ -15,6 +22,6 @@
     border-radius: 33px;
     padding: 20px 0 0 0;
     height: 46px;
-    border: 2px solid $dark-yellow;
+    border-width: 2px;
   }
 }
