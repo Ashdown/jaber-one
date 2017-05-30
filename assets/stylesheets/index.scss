@@ -29,10 +29,11 @@
 
 @import 'hero';
 
+@import 'articles-list';
+@import 'articles-list/news-articles';
+
 @import 'homepage/homepage-hero';
 @import 'homepage/showcase';
-@import 'homepage/latest-from';
-@import 'homepage/news-articles';
 
 @import 'processing-payments/processing-payments-hero';
 @import 'processing-payments/hero-nav-menu';

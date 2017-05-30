@@ -11,3 +11,7 @@ end
 get '/news' do
   erb :news
 end
+
+get '/news/article' do
+  erb :article
+end

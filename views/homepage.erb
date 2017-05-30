@@ -1,3 +1,4 @@
 <%= erb :'homepage/homepage_hero' %>
 <%= erb :'homepage/showcase' %>
-<%= erb :'homepage/latest_from' %>
+
+<%= erb :articles_list, :locals => {:title => 'Latest from'} %>

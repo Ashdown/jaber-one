@@ -1,4 +1,4 @@
-.latest-from {
+.articles-list {
   overflow: hidden;
   background-color: $purple;
   .title {
@@ -12,7 +12,7 @@
 }
 
 @include respond-to(desktop) {
-  .latest-from {
+  .articles-list {
     .title {
       font-size: 28px;
       margin-top: 42px;

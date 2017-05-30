@@ -1,7 +1,7 @@
 (function($){
     'use strict';
 
-    var $this = $('.latest-from .news-articles'),
+    var $this = $('.articles-list .news-articles'),
         slickCreated = false,
         slickSettings = {
             infinite: true,
