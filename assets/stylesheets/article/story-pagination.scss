@@ -28,3 +28,9 @@
   }
 
 }
+
+@include respond-to(desktop) {
+  .story-pagination {
+    display: none;
+  }
+}

@@ -1,6 +1,7 @@
 .story {
   text-align: center;
   padding: 0 10px 50px 10px;
+  overflow: hidden;
   .main-title {
     @include ag-bold();
     font-size: 26px;
@@ -21,4 +22,26 @@
     margin-top: 30px;
   }
 
+}
+
+@include respond-to(desktop) {
+  .story {
+    background-color: $white;
+    max-width: 658px;
+    margin: 0 auto 78px auto;
+    padding-left: 210px;
+    padding-right: 210px;
+    text-align: left;
+    .main-title {
+      font-size: 48px;
+      margin-top: 45px;
+      line-height: 1em;
+    }
+    .para {
+      font-size: 16px;
+    }
+    .video-image {
+      margin-top: 50px;
+    }
+  }
 }
