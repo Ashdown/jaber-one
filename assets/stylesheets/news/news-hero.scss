@@ -1,0 +1,21 @@
+.news-hero {
+  .hero-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 450px;
+  }
+  .title {
+    margin-top: 210px;
+  }
+}
+
+@include respond-to(desktop) {
+  .news-hero {
+    .hero-content {
+      height: 524px;
+    }
+    .title {
+      margin-top: 300px
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.news-menu-content {
+  display: none;
+
+  &.visible {
+    display: block;
+  }
+}
