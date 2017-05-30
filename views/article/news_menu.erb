@@ -1,18 +1,5 @@
 <div class="news-menu">
-    <ul class="mobile-menu">
-        <li>
-            <a class="menu-link" href="#">
-                <img src="/assets/header/menu-icon.png" height="38" width="38" alt="Menu">
-            </a>
-        </li>
-        <li class="link-item">
-            <a class="link" href="/news">Home</a>
-            <span class="border"></span>
-        </li>
-        <li class="link-item">
-            <a class="link" href="/news">News & Media</a>
-        </li>
-    </ul>
+    <%= erb :'/article/news_menu_mobile_part' %>
     <div class="menu-container">
         <ul class="main-menu">
             <li class="home-link-item">
@@ -20,16 +7,19 @@
                     <img class="home-image" src="/assets/footer/facebook-icon.png" height="40" width="40" alt="home"/>
                 </a>
             </li>
-            <li>
+            <li class="link-item">
                 <a class="link" href="#latest-news">Latest news</a>
+                <span class="border"></span>
             </li>
-            <li>
+            <li class="link-item">
                 <a class="link" href="#publications">Publications</a>
+                <span class="border"></span>
             </li>
-            <li>
+            <li class="link-item">
                 <a class="link" href="#videos">Videos</a>
+                <span class="border"></span>
             </li>
-            <li>
+            <li class="link-item">
                 <a class="link" href="#media-center">Media center</a>
             </li>
             <li>

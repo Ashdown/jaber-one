@@ -6,40 +6,6 @@
     @include ag-light();
   }
 
-  .mobile-menu {
-    background-color: $maroon;
-    text-align: right;
-    padding: 44px 0 10px 0;
-
-    .menu-link {
-      position: absolute;
-      top: 20px;
-      left: 15px;
-      height: 38px;
-      width: 38px;
-    }
-
-    .link-item {
-      display: inline-block;
-    }
-    .link {
-      font-size: 12px;
-      margin: 14px 10px 0 10px;
-      opacity: 0.75;
-      @include transition(opacity, 0.1s, linear);
-      &:hover {
-        opacity: 1;
-      }
-    }
-    .border {
-      height: 12px;
-      top: 2px;
-      width: 1px;
-      background-color: $white;
-      display: inline-block;
-    }
-  }
-
   .menu-container {
     background-color: $purple;
     padding: 0 50px 0 50px;
@@ -90,6 +56,55 @@
     margin-bottom: 50px;
   }
 
+}
 
+@include respond-to(desktop) {
+  .news-menu {
+    margin-top: 144px;
+    .menu-container {
+      background-color: transparent;
+      max-height: none;
+      text-align: right;
+    }
+    .home-link-item,
+    .social-media-links {
+      display: none;
+    }
+    .link-item {
+      display: inline-block;
+    }
+    .main-menu {
+      margin-top: 60px;
+      margin-right: 63px;
+    }
+    .main-menu .link {
+      @include ag-regular();
+      color: $black;
+      display: inline-block;
+      font-size: 20px;
+      line-height: 22px;
+      margin: 0 18px;
+      opacity: 0.75;
+      @include transition(opacity, 0.1s, linear);
+      &:hover {
+        opacity: 1;
+      }
+    }
+    .border {
+      height: 18px;
+      top: 3px;
+      width: 1px;
+      background-color: $black;
+      position: relative;
+      display: inline-block;
+    }
+    .search-link {
+      top: auto;
+      right: 52px;
+      bottom: 4px;
+      left: auto;
+      background-color: $black;
+    }
+  }
 
 }
