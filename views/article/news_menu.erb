@@ -1,20 +1,47 @@
-<ul class="news-menu">
-    <li>
-        <a class="link" href="#latest-news">Latest news</a>
-    </li>
-    <li>
-        <a class="link" href="#publications">Publications</a>
-    </li>
-    <li>
-        <a class="link" href="#videos">Videos</a>
-    </li>
-    <li>
-        <a class="link" href="#media-center">Media center</a>
-    </li>
-    <li>
-        <form>
-            <input type="text" placeholder="Search">
-            <button class="submit-button" type="submit"></button>
-        </form>
-    </li>
-</ul>
+<div class="news-menu">
+    <ul class="mobile-menu">
+        <li>
+            <a class="menu-link" href="#">
+                <img src="/assets/header/menu-icon.png" height="38" width="38" alt="Menu">
+            </a>
+        </li>
+        <li class="link-item">
+            <a class="link" href="/news">Home</a>
+            <span class="border"></span>
+        </li>
+        <li class="link-item">
+            <a class="link" href="/news">News & Media</a>
+        </li>
+    </ul>
+    <div class="menu-container">
+        <ul class="main-menu">
+            <li class="home-link-item">
+                <a class="link" href="/news">
+                    <img class="home-image" src="/assets/footer/facebook-icon.png" height="40" width="40" alt="home"/>
+                </a>
+            </li>
+            <li>
+                <a class="link" href="#latest-news">Latest news</a>
+            </li>
+            <li>
+                <a class="link" href="#publications">Publications</a>
+            </li>
+            <li>
+                <a class="link" href="#videos">Videos</a>
+            </li>
+            <li>
+                <a class="link" href="#media-center">Media center</a>
+            </li>
+            <li>
+                <a class="search-link" href="#">
+                    <img class="search-image" src="/assets/header/search-icon.png" height="38" width="38" alt="Search">
+                </a>
+                <form class="search-form">
+                    <input type="text" placeholder="Search">
+                    <button class="submit-button" type="submit"></button>
+                </form>
+            </li>
+        </ul>
+        <%= erb :'/footer/social_media_links' %>
+    </div>
+</div>
