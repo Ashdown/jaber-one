@@ -20,6 +20,7 @@
   }
 
   .copyright-information {
+    @include ag-light();
     margin-top: 16px;
     font-size: 8px;
     color: $black;

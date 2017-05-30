@@ -32,6 +32,7 @@
     height: 26px;
     .link {
       font-size: 14px;
+      @include ag-light();
     }
     .border {
       margin: 0 12px;

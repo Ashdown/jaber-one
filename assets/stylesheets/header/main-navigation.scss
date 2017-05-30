@@ -110,6 +110,7 @@
       float: left;
     }
     .small-link {
+      @include ag-light();
       font-size: 14px;
       margin: 14px 10px 0 10px;
     }

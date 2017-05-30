@@ -4,9 +4,10 @@
     height: 570px;
     position: relative;
     overflow: hidden;
-    padding: 0 30px;
+    padding: 0 15px;
   }
   .title {
+    @include ag-bold();
     font-size: 24px;
     color: $white;
     line-height: 1.2em;
@@ -15,7 +16,7 @@
   .white-button-link {
     padding-left: 0;
     padding-right: 0;
-    width: 200px;
+    width: 160px;
   }
   .background-image {
     position: absolute;

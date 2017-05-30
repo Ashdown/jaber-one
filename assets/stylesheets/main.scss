@@ -1,5 +1,5 @@
 .all-content {
-  font-family: Helvetica, Arial, sans-serif;
+  @include ag-regular();
   margin: 0 auto;
 }
 .offscreen-text {

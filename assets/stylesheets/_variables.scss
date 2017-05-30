@@ -19,9 +19,20 @@ $button-transparency: rgba(0,0,0,0.3);
 
 //fonts
 
-$ag-light: 'AkticGrotesk Light', helvetica, arial, sans-serif;
-$ag-bold: 'AkticGrotesk Bold', helvetica, arial, sans-serif;
-$ag-regular: 'AkticGrotesk Regular', helvetica, arial, sans-serif;
-
+@mixin ag-regular() {
+  font-family: aktiv-grotesk, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+@mixin ag-bold() {
+  font-family: aktiv-grotesk, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+@mixin ag-light() {
+  font-family: aktiv-grotesk, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
 
 
