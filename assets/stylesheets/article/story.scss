@@ -1,0 +1,25 @@
+.story {
+  text-align: center;
+  padding: 0 10px 100px 10px;
+  position: relative;
+  .main-title {
+    @include ag-bold();
+    font-size: 26px;
+    margin-top: 50px;
+    $color: $maroon;
+    line-height: 1.2em;
+  }
+  .para {
+    font-size: 16px;
+    line-height: 1.2em;
+    color: $maroon;
+    margin-top: 24px;
+  }
+  .video-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+  }
+
+}
