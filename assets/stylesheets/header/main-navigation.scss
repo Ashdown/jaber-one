@@ -1,4 +1,4 @@
-.navigation-list {
+.main-navigation {
   background-color: rgba(0,0,0,0.75);
   padding: 30px 0 30px 0;
   position: fixed;
@@ -9,13 +9,37 @@
   text-align: center;
   @include transition(right, 0.3s, linear);
 
+  .navigation-list {
+    position: relative;
+    padding-bottom: 178px;
+  }
+
   .link {
     display: inline-block;
   }
 
   .small-link {
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 15px;
+  }
+
+  .top-links,
+  .about-us-item,
+  .news-and-media-item {
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+  .top-links {
+    bottom: 0;
+    padding-bottom: 70px;
+  }
+  .about-us-item {
+    bottom: 35px;
+  }
+  .news-and-media-item {
+    bottom: 0;
   }
 
   .small-link,
@@ -48,12 +72,12 @@
 
 }
 
-.open-menu .navigation-list {
+.open-menu .main-navigation {
   right: 0;
 }
 
 @include respond-to(desktop) {
-  .navigation-list {
+  .main-navigation {
 
     margin: 29px 43px 0 0;
     color: $white;
@@ -62,6 +86,20 @@
     padding: 0;
     position: static;
     max-width: 1000px;
+
+    .navigation-list,
+    .top-links{
+      padding-bottom: 0;
+    }
+
+    .top-links,
+    .about-us-item,
+    .news-and-media-item {
+      position: static;
+      left: auto;
+      right: auto;
+      bottom: auto;
+    }
 
     .top-links,
     .bottom-links {
