@@ -2,21 +2,24 @@
   .hero-content {
     padding-left: 15px;
     padding-right: 15px;
-    height: 490px;
+    height: 468px;
   }
   .title {
-    margin-top: 172px;
+    margin-top: 200px;
+  }
+
+  .yellow-button-link,
+  .white-button-link {
+    width: 160px;
   }
 
   .yellow-button-link {
     margin-top: 45px;
     padding-left: 0;
     padding-right: 0;
-    width: 200px;
   }
   .white-button-link {
     margin-top: 20px;
-    width: 200px;
   }
 }
 

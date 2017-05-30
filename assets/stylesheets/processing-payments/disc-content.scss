@@ -18,6 +18,7 @@
   }
 
   .content-header {
+    @include ag-bold();
     background: transparent url($image-folder + '/processing-payments/mag-glass.png') top center / 91px 69px no-repeat;
     padding-top: 75px;
     font-size: 28px;
@@ -25,6 +26,7 @@
 
   .introduction,
   .para {
+    @include ag-light();
     line-height: 1.2em;
   }
 
@@ -36,6 +38,10 @@
   .para {
     font-size: 16px;
     margin-top: 24px;
+  }
+
+  .strong {
+    @include ag-bold();
   }
 
   .white-button-link {

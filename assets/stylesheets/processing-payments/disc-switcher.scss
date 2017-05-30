@@ -10,8 +10,10 @@
 
   }
   .disc-link {
+    @include ag-bold();
     text-align: center;
     font-size: 12px;
+    line-height: 1.2em;
     margin-top: 35px;
     display: block;
     color: $black;
@@ -71,7 +73,7 @@
     margin-top: 20px;
     margin-bottom: 50px;
     opacity: 1;
-    @include transition(opacity, 0.2s, ease);
+    @include transition(all, 0.1s, ease);
   }
 
   .disc-content {
@@ -108,7 +110,7 @@
       width: 195px;
     }
     .disc-link {
-      font-size: 28px;
+      font-size: 22px;
       margin-top: 55px;
     }
     .icon {
@@ -122,7 +124,7 @@
       width: 3px;
     }
     .container {
-      top: 405px;
+      top: 395px;
     }
     .read-more-link {
       display: none;
