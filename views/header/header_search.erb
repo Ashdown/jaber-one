@@ -1,6 +1,9 @@
 <form class="header-search" action="/search">
     <div class="bordered-container">
         <input class="keyword-field" type="text" placeholder="Search" name="keyword" id="search" aria-invalid="false">
-        <button class="submit-button" type="submit"/>
+        <label>
+            <input type="submit" class="submit-button" />
+            <%= erb :'svg/next_trans' %>
+        </label>
     </div>
 </form>

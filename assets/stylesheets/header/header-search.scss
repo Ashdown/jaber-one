@@ -33,23 +33,33 @@
       outline-width: 0;
     }
     &::placeholder {
-      color: $off-white;
+      color: $unimportant-grey;
     }
   }
 
-  .submit-button {
-    $button-height: 28px;
+  .next-trans-svg {
+    @include circle(36px);
     position: absolute;
-    top: 3px;
-    right: 3px;
-    background: transparent url($image-folder + '/header/search-icon.png') top left / $button-height $button-height no-repeat;
-    height: $button-height;
-    width: $button-height;
-    border: none;
+    top: -1px;
+    right: -1px;
     cursor: pointer;
+    background-color: transparent;
+    @include transition(background-color, 0.1s, linear);
+    .border,
+    .shape {
+      fill: $white;
+      @include transition(fill, 0.1s, linear);
+    }
+    &:hover {
+      background-color: $white;
+      .shape {
+        fill: $black;
+      }
+    }
   }
-
-
+  .submit-button {
+    display: none;
+  }
 }
 
 @include respond-to(desktop) {
@@ -75,6 +85,25 @@
       color: $black;
       &::placeholder {
         color: $unimportant-grey;
+      }
+    }
+    .next-trans-svg {
+      right: -1px;
+      border: 1px solid $white;
+      .border {
+        fill: $white;
+      }
+      .shape{
+        fill: $black;
+      }
+      &:hover {
+        background-color: $black;
+        .border {
+          fill: $black;
+        }
+        .shape{
+          fill: $white;
+        }
       }
     }
     .submit-button {

@@ -21,6 +21,10 @@
 
     });
 
+    $('.header-search').on('click', function(event) {
+        event.stopPropagation();
+    });
+
     $('.all-content').on('click', function() {
         closeSearch();
     }).on('click', '.search-link', function(event) {
