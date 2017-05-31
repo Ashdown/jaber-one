@@ -26,13 +26,6 @@
 @include respond-to(desktop) {
   .latest-news {
 
-    .top-story-title,
-    .link-text,
-    .extract,
-    .date {
-      left: 85px;
-      width: 470px;
-    }
     .top-story-title {
       font-size: 45px;
       color: $white;
@@ -41,48 +34,73 @@
       position: relative;
       top: 150px;
       z-index: 50;
+      left: 85px;
+      width: 470px;
     }
+
     .top-story-image-link {
+
       margin-top: 40px;
-    }
-    .link-text {
-      top: 120px;
-      font-size: 38px;
-    }
-    .extract,
-    .date {
       display: block;
-      position: absolute;
-      color: $white;
-      font-size: 20px;
-      line-height: 1.2em;
+      width: 100%;
+
+      .link-text,
+      .extract,
+      .date {
+        left: 85px;
+        width: 470px;
+      }
+
+      .link-text {
+        top: 120px;
+        font-size: 38px;
+      }
+      .extract,
+      .date {
+        display: block;
+        position: absolute;
+        color: $white;
+        font-size: 20px;
+        line-height: 1.2em;
+      }
+      .extract {
+        top: 230px;
+      }
+      .date {
+        top: 305px;
+      }
+      .pencil-icon {
+        display: inline-block;
+        $height: 30px;
+        height: $height;
+        width: $height;
+        border-radius: $height / 2;
+        background-color: $white;
+        position: relative;
+        top: 7px;
+        margin-right: 10px;
+      }
+      .chevron-circle {
+        $height: 56px;
+        height: $height;
+        width: $height;
+        border-radius: $height / 2;
+        top: 230px;
+        right: auto;
+        bottom: auto;
+        left: 568px;
+
+      }
+
     }
     .extract {
-      top: 230px;
+      display: none;
     }
-    .date {
-      top: 305px;
-    }
-    .pencil-icon {
-      display: inline-block;
-      $height: 30px;
-      height: $height;
-      width: $height;
-      border-radius: $height / 2;
-      background-color: $white;
-      position: relative;
-      top: 7px;
-      margin-right: 10px;
-    }
-    .chevron-circle {
-      $height: 56px;
-      height: $height;
-      width: $height;
-      border-radius: $height / 2;
-      top: 230px;
-      right: auto;
-      bottom: auto;
-      left: 568px;
+    .article-list {
+      overflow: hidden;
+      clear: both;
     }
   }
+
 }
+

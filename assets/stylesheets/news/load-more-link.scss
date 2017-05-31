@@ -28,3 +28,9 @@
   }
 
 }
+
+@include respond-to(desktop) {
+  .load-more-link {
+    clear: both;
+  }
+}
