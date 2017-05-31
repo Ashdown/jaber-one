@@ -1,40 +1,10 @@
 .videos {
-  .feature-title {
-    font-size: 16px;
-    color: $dark-turquoise;
-    text-transform: uppercase;
-    margin-top: 25px;
-  }
+
   .sub-title {
     font-size: 20px;
     margin-top: 55px;
     text-align: center;
     @include ag-bold();
-  }
-
-  .feature-video .sub-title {
-    margin-top: 5px;
-    text-align: left;
-  }
-
-  .video-image {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin-top: 10px;
-  }
-  .intro-para {
-    line-height: 1.2em;
-    margin-top: 10px;
-  }
-
-  .intro-para {
-    font-size: 16px;
-  }
-
-  .date,
-  .para {
-    display: none;
   }
 
   .article-image-list {
@@ -53,4 +23,47 @@
     bottom: 15px;
   }
 
+}
+
+@include respond-to(desktop) {
+  .videos {
+    .sub-title {
+      margin-top: 60px;
+      font-size: 30px;
+    }
+    .article-image-list {
+      margin-top: 25px;
+      overflow: hidden;
+    }
+    .link-text {
+      width: auto;
+      left: 24px;
+      right: 24px;
+      top: 15px;
+      font-size: 20px;
+    }
+    .chevron-circle {
+      $height: 44px;
+      height: $height;
+      width: $height;
+      border-radius: $height / 2;
+    }
+    .load-more-link {
+      margin-top: 40px;
+    }
+  }
+}
+@include respond-to(max) {
+  .videos {
+    .link-text {
+      top: 75px;
+    }
+    .chevron-circle {
+      $height: 55px;
+      height: $height;
+      width: $height;
+      border-radius: $height / 2;
+    }
+
+  }
 }
