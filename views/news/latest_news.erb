@@ -53,7 +53,7 @@
             <p class="extract">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.</p>
         </li>
-        <li class="article-image-link">
+        <li class="article-image-link hidden">
             <h2>
                 <a href="/news/article" class="link overlay">
                     <span class="link-text">5 Big changes we can expect from Trump</span>
@@ -65,7 +65,7 @@
             <p class="extract">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.</p>
         </li>
-        <li class="article-image-link">
+        <li class="article-image-link hidden">
             <h2>
                 <a href="/news/article" class="link overlay">
                     <span class="link-text">5 Big changes we can expect from Trump</span>
@@ -77,7 +77,7 @@
             <p class="extract">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.</p>
         </li>
-        <li class="article-image-link">
+        <li class="article-image-link hidden">
             <h2>
                 <a href="/news/article" class="link overlay">
                     <span class="link-text">5 Big changes we can expect from Trump</span>
@@ -90,6 +90,6 @@
                 dolore magna aliqua.</p>
         </li>
     </ul>
-    <%= erb :'news/load_more_link' %>
+    <%= erb :'news/load_more_link', :locals => {:target => '#latest-news-image-list'} %>
 
 </div>

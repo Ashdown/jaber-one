@@ -7,6 +7,9 @@
   &:hover {
     opacity: 1;
   }
+  &.hidden {
+    display: none;
+  }
   .icon {
     $height: 42px;
     height: $height;

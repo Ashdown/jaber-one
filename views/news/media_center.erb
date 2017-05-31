@@ -1,6 +1,6 @@
 <div id="media-center" class="media-center news-menu-content">
     <h2 class="content-title">Recent posts by Adflex</h2>
-    <ul class="article-image-list">
+    <ul id="media-center-image-list" class="article-image-list">
         <li class="article-image-link">
             <h2>
                 <a href="/news/article" class="link overlay">
@@ -86,6 +86,6 @@
                 dolore magna aliqua.</p>
         </li>
     </ul>
-    <%= erb :'news/load_more_link' %>
+    <%= erb :'news/load_more_link', :locals => {:target => '#media-center-image-list'} %>
 
 </div>
