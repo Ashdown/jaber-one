@@ -35,3 +35,10 @@
   -o-transition: $property $duration $type;
   transition: $property $duration $type;
 }
+
+@mixin circle($height) {
+  height: $height;
+  width: $height;
+  border-radius: $height / 2;
+  overflow: hidden;
+}

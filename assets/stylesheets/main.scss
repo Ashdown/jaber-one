@@ -11,6 +11,11 @@
 .link {
   text-decoration: none;
   color: $white;
+  @include transition(all, 0.1s, linear);
+  .shape,
+  .border {
+    @include transition(all, 0.1s, linear);
+  }
 }
 .hidden {
   display: none;

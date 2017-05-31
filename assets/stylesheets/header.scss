@@ -27,15 +27,41 @@
   .menu-link {
     position: absolute;
     top: 23px;
-    height: 38px;
-    width: 38px;
+    @include circle(38px);
   }
   .search-link {
     left: 15px;
+    .border,
+    .shape {
+      fill: $white;
+    }
+    &:hover {
+      background-color: $white;
+      .shape {
+        fill: $maroon;
+      }
+    }
   }
   .menu-link {
     right: 10px;
+    background-color: $purple;
+    .border {
+      fill: $purple;
+    }
+    .shape {
+      fill: $white;
+    }
+    &:hover {
+      background-color: $white;
+      .border {
+        fill: $white;
+      }
+      .shape {
+        fill: $purple;
+      }
+    }
   }
+
 }
 
 @include respond-to(desktop) {
