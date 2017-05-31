@@ -73,7 +73,7 @@
     max-height: none;
     opacity: 1;
     &.visible {
-      width: 800px;
+      width: 665px;
     }
     .bordered-container {
       margin: 0;
@@ -118,3 +118,11 @@
     }
   }
 }
+
+@include respond-to(max) {
+  .header-search {
+    &.visible {
+      width: 800px;
+    }
+  }
+  }

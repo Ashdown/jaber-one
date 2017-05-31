@@ -52,7 +52,7 @@
 
     }
     .title {
-      margin: 0 280px 0 280px;
+      margin: 0 100px;
       font-size: 56px;
       line-height: 1;
     }
@@ -75,6 +75,9 @@
       left: 0;
       width: 100%;
       margin-right: 0;
+    }
+    .title {
+      margin: 0 280px;
     }
   }
 }

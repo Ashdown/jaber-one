@@ -64,7 +64,7 @@
   .bottom-links {
     margin-top: 10px;
     .link {
-      font-size: 20px;
+      font-size: 16px;
       line-height: 22px;
       margin: 15px 18px 0 18px;
     }
@@ -141,6 +141,16 @@
       .link-border {
         height: 18px;
         top: 3px;
+      }
+    }
+  }
+}
+
+@include respond-to(max) {
+  .main-navigation {
+    .bottom-links {
+      .link {
+        font-size: 20px;
       }
     }
   }
