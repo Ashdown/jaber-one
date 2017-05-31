@@ -13,8 +13,14 @@
     @include ag-bold();
   }
 
-  .top-story-title {
-   font-size: 20px;
-  }
+}
 
+@include respond-to(desktop) {
+  .news-menu-content {
+    padding: 0 50px 95px 50px;
+    .content-title {
+      display: none;
+    }
+
+  }
 }

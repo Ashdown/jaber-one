@@ -14,7 +14,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 30;
+    z-index: 100;
   }
   .link-text {
     font-size: 16px;
@@ -47,5 +47,11 @@
   }
   .extract {
     display: none;
+  }
+}
+
+@include respond-to(desktop) {
+  .article-image-link {
+
   }
 }
