@@ -19,13 +19,13 @@
   .article-title,
   .type-icon,
   .link,
-  .chevron{
+  .next-svg{
     z-index: 10;
   }
   .type-icon,
   .link,
   .image,
-  .chevron,
+  .next-svg,
   .circle{
     position: absolute;
   }
@@ -59,11 +59,13 @@
     height: 100%;
     width: auto;
   }
-  .chevron {
+  .next-svg {
     bottom: 24px;
     right: 12px;
-    height: 36px;
-    width: auto;
+    @include circle(36px);
+    .shape {
+      fill: $dark-yellow;
+    }
   }
   .slick-dots {
     top: -50px;
@@ -103,7 +105,7 @@
       right: 18px;
       width: 50px;
     }
-    .chevron {
+    .next-svg {
       height: 56px;
       right: 23px;
       bottom: 40px;
