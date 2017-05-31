@@ -1,50 +1,102 @@
-<div id="videos" class="videos news-menu-content">
-    <h2>Videos</h2>
-    <h3>Feature story</h3>
-    <h4>Election 2017 live updates:</h4>
-    <img src="/assets/news/video.png"/>
-    <p>Lorem ipsum dolar sit amet</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua.</p>
-    <p>Last edited 18th May 2017</p>
-    <h3>Top Stories</h3>
-    <ul>
-        <li>
-            <h4>Lorem ipsum dolar sit amet</h4>
-            <img src="/assets/news/video.png"/>
-            <a href="#">Play</a>
+<div id="videos" class="videos news-menu-content visible">
+    <h2 class="content-title">Videos</h2>
+    <div class="feature-video">
+        <h3 class="feature-title">Feature story</h3>
+        <h4 class="sub-title">Election 2017 live updates:</h4>
+        <img class="video-image" src="/assets/news/video.png"/>
+        <p class="intro-para">Lorem ipsum dolar sit amet</p>
+        <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.</p>
+        <p class="date">Last edited 18th May 2017<span class="pencil-icon"></span></p>
+    </div>
+    <h3 class="sub-title">Top Stories</h3>
+    <ul id="top-video-stories" class="article-image-list">
+        <li class="article-image-link">
+            <div class="image-container">
+                <h2>
+                    <a href="/news/article" class="link overlay">
+                        <span class="link-text">Lorem ipsum dolar sit amet dolar sit amet</span>
+                    </a>
+                </h2>
+                <span class="chevron-circle"></span>
+                <img class="image" src="/assets/news/video.png" height="375" width="375">
+            </div>
         </li>
-        <li>
-            <h4>Lorem ipsum dolar sit amet</h4>
-            <img src="/assets/news/video.png"/>
-            <a href="#">Play</a>
-        </li>
-        <li>
-            <h4>Lorem ipsum dolar sit amet</h4>
-            <img src="/assets/news/video.png"/>
-            <a href="#">Play</a>
-        </li>
-    </ul>
-    <a href="#">Load more</a>
 
-    <h3>Trending videos</h3>
-    <ul>
-        <li>
-            <h4>Lorem ipsum dolar sit amet</h4>
-            <img src="/assets/news/video.png"/>
-            <a href="#">Play</a>
+        <li class="article-image-link">
+            <div class="image-container">
+                <h2>
+                    <a href="/news/article" class="link overlay">
+                        <span class="link-text">Lorem ipsum dolar sit amet</span>
+                    </a>
+                </h2>
+                <span class="chevron-circle"></span>
+                <img class="image" src="/assets/news/video.png" height="375" width="375">
+            </div>
         </li>
-        <li>
-            <h4>Lorem ipsum dolar sit amet</h4>
-            <img src="/assets/news/video.png"/>
-            <a href="#">Play</a>
+
+        <li class="article-image-link">
+            <div class="image-container">
+                <h2>
+                    <a href="/news/article" class="link overlay">
+                        <span class="link-text">Lorem ipsum dolar sit amet</span>
+                    </a>
+                </h2>
+                <span class="chevron-circle"></span>
+                <img class="image" src="/assets/news/video.png" height="375" width="375">
+            </div>
         </li>
-        <li>
-            <h4>Lorem ipsum dolar sit amet</h4>
-            <img src="/assets/news/video.png"/>
-            <a href="#">Play</a>
+        <li class="article-image-link hidden">
+            <div class="image-container">
+                <h2>
+                    <a href="/news/article" class="link overlay">
+                        <span class="link-text">Lorem ipsum dolar sit amet</span>
+                    </a>
+                </h2>
+                <span class="chevron-circle"></span>
+                <img class="image" src="/assets/news/video.png" height="375" width="375">
+            </div>
+        </li>
+
+    </ul>
+    <%= erb :'news/load_more_link', :locals => {:target => '#top-video-stories'} %>
+
+    <h3 class="sub-title">Trending videos</h3>
+    <ul id="trending-video-stories" class="article-image-list">
+        <li class="article-image-link">
+            <div class="image-container">
+                <h2>
+                    <a href="/news/article" class="link overlay">
+                        <span class="link-text">Lorem ipsum dolar sit amet</span>
+                    </a>
+                </h2>
+                <span class="chevron-circle"></span>
+                <img class="image" src="/assets/news/video.png" height="375" width="375">
+            </div>
+        </li>
+        <li class="article-image-link">
+            <div class="image-container">
+                <h2>
+                    <a href="/news/article" class="link overlay">
+                        <span class="link-text">Lorem ipsum dolar sit amet</span>
+                    </a>
+                </h2>
+                <span class="chevron-circle"></span>
+                <img class="image" src="/assets/news/video.png" height="375" width="375">
+            </div>
+        </li>
+        <li class="article-image-link">
+            <div class="image-container">
+                <h2>
+                    <a href="/news/article" class="link overlay">
+                        <span class="link-text">Lorem ipsum dolar sit amet</span>
+                    </a>
+                </h2>
+                <span class="chevron-circle"></span>
+                <img class="image" src="/assets/news/video.png" height="375" width="375">
+            </div>
         </li>
     </ul>
-    <a href="#">Load more</a>
+    <%= erb :'news/load_more_link', :locals => {:target => '#trending-video-stories'} %>
 
 </div>

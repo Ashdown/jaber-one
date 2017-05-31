@@ -1,0 +1,56 @@
+.videos {
+  .feature-title {
+    font-size: 16px;
+    color: $dark-turquoise;
+    text-transform: uppercase;
+    margin-top: 25px;
+  }
+  .sub-title {
+    font-size: 20px;
+    margin-top: 55px;
+    text-align: center;
+    @include ag-bold();
+  }
+
+  .feature-video .sub-title {
+    margin-top: 5px;
+    text-align: left;
+  }
+
+  .video-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+  .intro-para {
+    line-height: 1.2em;
+    margin-top: 10px;
+  }
+
+  .intro-para {
+    font-size: 16px;
+  }
+
+  .date,
+  .para {
+    display: none;
+  }
+
+  .article-image-list {
+    margin-top: 20px;
+  }
+
+  .link-text {
+    right: 20px;
+    top: 55px;
+    bottom: auto;
+  }
+
+  .chevron-circle {
+    right: auto;
+    left: 15px;
+    bottom: 15px;
+  }
+
+}
