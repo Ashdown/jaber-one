@@ -1,7 +1,20 @@
 .news-menu-content {
   display: none;
+  padding: 0 10px 32px 10px;
 
   &.visible {
     display: block;
   }
+
+  .content-title {
+    margin-top: 42px;
+    font-size: 24px;
+    text-align: center;
+    @include ag-bold();
+  }
+
+  .top-story-title {
+   font-size: 20px;
+  }
+
 }

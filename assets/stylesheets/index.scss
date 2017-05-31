@@ -30,8 +30,15 @@
 
 @import 'hero';
 
+@import 'news-menu';
+@import 'news-menu/news-menu-mobile-part';
+
 @import 'articles-list';
 @import 'articles-list/news-articles';
+
+@import 'article-image-link';
+
+//pages
 
 @import 'homepage/homepage-hero';
 @import 'homepage/showcase';
@@ -44,9 +51,9 @@
 
 @import 'news/news-hero';
 @import 'news/news-menu-content';
+@import 'news/latest-news';
+@import 'news/media-center';
 
 @import 'article-page';
-@import 'article/news-menu';
-@import 'article/news-menu-mobile-part';
 @import 'article/story';
 @import 'article/story-pagination';

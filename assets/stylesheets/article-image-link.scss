@@ -1,0 +1,51 @@
+.article-image-link {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 10px;
+  .link,
+  .link-text,
+  .background-circle,
+  .chevron-circle {
+    position: absolute;
+  }
+  .link {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 30;
+  }
+  .link-text {
+    font-size: 16px;
+    line-height: 1.4em;
+    right: 145px;
+    bottom: 25px;
+    left: 20px;
+  }
+  .background-circle {
+    height: 400px;
+    width: 400px;
+    border-radius: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 115px;
+    left: -120px;
+  }
+  .chevron-circle {
+    $height: 44px;
+    height: $height;
+    width: $height;
+    border-radius: $height / 2;
+    background-color: $dark-yellow;
+    right: 15px;
+    bottom: 18px;
+  }
+  .image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .extract {
+    display: none;
+  }
+}

@@ -1,0 +1,19 @@
+.latest-news {
+  .top-story-title {
+    font-size: 18px;
+    margin-top: 30px;
+    @include ag-bold();
+  }
+  .top-story-image-link {
+    margin-top: 10px;
+    .link-text {
+      right: 80px;
+    }
+    .background-circle {
+      height: 500px;
+      width: 500px;
+      top: -60px;
+      left: -220px;
+    }
+  }
+}

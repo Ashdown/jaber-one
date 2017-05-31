@@ -1,5 +1,4 @@
 .news-menu {
-  margin-top: 73px;
   position: relative;
 
   .link {
@@ -60,7 +59,6 @@
 
 @include respond-to(desktop) {
   .news-menu {
-    margin-top: 144px;
     .menu-container {
       background-color: $white;
       max-height: none;
