@@ -3,23 +3,20 @@
   margin-top: 24px;
 
   .link {
-    height: 37px;
-    width: 37px;
-    background-size: 37px 37px;
     margin: 0 5px;
+    @include circle(38px)
   }
 
-  .facebook-link {
-    background-image: url($image-folder + '/footer/facebook-icon.png');
+  .border,
+  .shape {
+    fill: $purple;
   }
-  .youtube-link {
-    background-image: url($image-folder + '/footer/youtube-icon.png');
-  }
-  .twitter-link {
-    background-image: url($image-folder + '/footer/twitter-icon.png');
-  }
-  .linkedin-link {
-    background-image: url($image-folder + '/footer/linkedin-icon.png');
+
+  .link:hover {
+    background-color: $purple;
+    .shape {
+      fill: $white;
+    }
   }
 
 }
@@ -33,9 +30,7 @@
     left: 0;
     text-align: center;
     .link {
-      height: 60px;
-      width: 60px;
-      background-size: 60px 60px;
+      @include circle(60px);
       margin: 0 13px;
     }
   }
