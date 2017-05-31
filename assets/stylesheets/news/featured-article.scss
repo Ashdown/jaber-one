@@ -4,27 +4,22 @@
     margin-top: 5px;
     text-align: left;
   }
-
   .date {
     display: none;
   }
-
   .para,
   .image {
     margin-top: 24px;
   }
-
   .para {
     font-size: 14px;
     line-height: 1.2em;
   }
-
   .image {
     display: block;
     width: 100%;
     height: auto;
   }
-
   .next-article-link {
     margin-top: 20px;
     @include ag-bold();
@@ -35,14 +30,56 @@
   }
   .chevron-link {
     display: none;
-    //      $height: 44px;
-    //      height: $height;
-    //      width: $height;
-    //      border-radius: $height / 2;
-    //      background-color: $dark-yellow;
-    //      position: relative;
-    //      top: -12px;
-
   }
 
+}
+
+@include respond-to(desktop) {
+  .featured-article {
+    .feature-title {
+      margin-top: 60px;
+    }
+    .sub-title {
+      margin-top: 12px;
+    }
+    .date {
+      display: block;
+      margin-top: 25px;
+      @include ag-light();
+    }
+    .pencil-icon {
+      $height: 30px;
+      height: $height;
+      width: $height;
+      border-radius: $height / 2;
+      background-color: $dark-pink;
+      margin-right: 10px;
+      position: relative;
+      top: 7px;
+      font-size: 22px;
+      display: inline-block;
+
+    }
+    .date-link {
+      color: $light-turquoise;
+      font-style: italic;
+    }
+    .para {
+      font-size: 16px;
+    }
+    .image {
+      margin-top: 42px;
+    }
+    .chevron-link {
+      display: inline-block;
+      $height: 44px;
+      height: $height;
+      width: $height;
+      border-radius: $height / 2;
+      background-color: $dark-yellow;
+      position: relative;
+      top: 12px;
+      margin-left: 10px;
+    }
+  }
 }

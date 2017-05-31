@@ -6,3 +6,20 @@
     @include ag-bold();
   }
 }
+
+@include respond-to(desktop) {
+  .publications {
+    overflow: hidden;
+    .featured-article {
+      width: 65%;
+      float: left;
+    }
+    .most-read {
+      width: 25%;
+      float: right;
+    }
+    .sub-title {
+      font-size: 30px;
+    }
+  }
+}
