@@ -26,6 +26,10 @@
 @include respond-to(desktop) {
   .latest-news {
 
+    .content-title {
+      display: none;
+    }
+
     .top-story-title {
       font-size: 45px;
       color: $white;

@@ -4,3 +4,17 @@
     margin-top: 5px;
   }
 }
+
+@include respond-to(desktop) {
+  .media-center {
+    .content-title {
+      display: block;
+      margin-top: 35px;
+      font-size: 32px;
+      text-align: left;
+    }
+    .article-image-list {
+      margin-top: 25px;
+    }
+  }
+}
