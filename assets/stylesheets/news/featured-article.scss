@@ -1,11 +1,8 @@
 .featured-article {
   margin-top: 20px;
   .sub-title {
-    font-size: 20px;
     margin-top: 5px;
     text-align: left;
-    @include ag-bold();
-
   }
 
   .date {
@@ -34,6 +31,7 @@
     color: $dark-turquoise;
     font-size: 20px;
     display: block;
+    line-height: 1.2em;
   }
   .chevron-link {
     display: none;
