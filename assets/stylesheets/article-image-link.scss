@@ -1,13 +1,15 @@
 .article-image-link {
-  position: relative;
-  border-radius: 10px;
-  overflow: hidden;
   margin-top: 10px;
   .link,
   .link-text,
   .background-circle,
   .chevron-circle {
     position: absolute;
+  }
+  .image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
   }
   .link {
     top: 0;
@@ -44,6 +46,7 @@
     width: 100%;
     height: auto;
     display: block;
+
   }
   .extract {
     display: none;
@@ -54,7 +57,7 @@
   .article-image-link {
     width: 30%;
     float: left;
-    margin-top: 60px;
+    margin-top: 0;
     &:nth-child(2),
     &:nth-child(5),
     &:nth-child(8),
@@ -83,6 +86,12 @@
       right: 20px;
       bottom: 30px;
     }
-
+    .extract {
+      display: block;
+      font-size: 20px;
+      padding: 30px 15px 0 15px;
+      line-height: 1.2em;
+      height: 165px;
+    }
   }
 }

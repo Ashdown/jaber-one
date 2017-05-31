@@ -32,5 +32,15 @@
 @include respond-to(desktop) {
   .load-more-link {
     clear: both;
+    margin-top: 0;
+    .icon {
+      $height: 52px;
+      height: $height;
+      width: $height;
+      border-radius: $height / 2;
+    }
+    .link-text {
+      font-size: 20px;
+    }
   }
 }
