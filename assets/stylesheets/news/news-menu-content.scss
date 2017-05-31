@@ -13,6 +13,13 @@
     @include ag-bold();
   }
 
+  .feature-title {
+    font-size: 16px;
+    color: $dark-turquoise;
+    text-transform: uppercase;
+    @include ag-light();
+  }
+
 }
 
 @include respond-to(desktop) {
@@ -20,6 +27,9 @@
     padding: 0 50px 95px 50px;
     .content-title {
       display: none;
+    }
+    .feature-title {
+      font-size: 22px;
     }
 
   }

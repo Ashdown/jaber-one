@@ -1,10 +1,6 @@
 .featured-video {
   .feature-title {
-    font-size: 16px;
-    color: $dark-turquoise;
-    text-transform: uppercase;
     margin-top: 25px;
-    @include ag-light();
   }
   .sub-title {
     margin-top: 5px;
@@ -42,7 +38,6 @@
       float: right;
     }
     .feature-title {
-      font-size: 22px;
       margin-top: 40px;
     }
     .sub-title {
