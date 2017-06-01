@@ -36,6 +36,12 @@
   transition: $property $duration $type;
 }
 
+@mixin rotate($deg) {
+  -ms-transform: rotate($deg);
+  -webkit-transform: rotate($deg);
+  transform: rotate($deg);
+}
+
 @mixin circle($height) {
   height: $height;
   width: $height;

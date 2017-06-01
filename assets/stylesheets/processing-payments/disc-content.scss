@@ -6,9 +6,14 @@
     position: absolute;
     top: 15px;
     left: 15px;
-    background: transparent url($image-folder + '/processing-payments/chevron.png') top left / 35px 35px no-repeat;
-    height: 35px;
-    width: 35px;
+    @include circle(35px);
+    .next-trans-svg {
+      @include rotate(-90deg);
+      .border,
+      .shape {
+        fill: $white;
+      }
+    }
   }
 
   .content-header,
