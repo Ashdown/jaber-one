@@ -988,7 +988,7 @@
             }
 
             /**
-             * Returns a function to use in pseudos for buttons
+             * Returns a function to use in pseudos for button-links
              * @param {String} type
              */
             function createButtonPseudo( type ) {

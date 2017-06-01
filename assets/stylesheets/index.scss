@@ -1,6 +1,5 @@
-//variables and config
+//variables and mixins
 
-@import '_config';
 @import '_variables';
 @import '_mixins';
 
@@ -10,41 +9,38 @@
 @import 'lib/slick';
 @import 'lib/slick-theme';
 
+@import 'main';
+
 //components
 
-@import 'main';
-@import 'links-list';
-@import 'yellow-button-link';
-@import 'orange-button-link';
-@import 'white-button-link';
-@import 'purple-button-link';
+@import 'components/links-list';
+@import 'components/button-links/yellow-button-link';
+@import 'components/button-links/orange-button-link';
+@import 'components/button-links/white-button-link';
+@import 'components/button-links/purple-button-link';
+@import 'components/hero';
+@import 'components/news-menu';
+@import 'components/news-menu/news-menu-mobile-part';
+@import 'components/articles-list';
+@import 'components/articles-list/news-articles';
+@import 'components/article-image-link';
+@import 'components/introduction';
+@import 'components/disc-switcher';
+@import 'components/disc-switcher/disc-content';
+@import 'components/action-list';
+
+//header
 
 @import 'header';
 @import 'header/main-navigation';
 @import 'header/header-background';
 @import 'header/header-search';
+@import 'social-media-links';
+
+//footer
 
 @import 'footer';
 @import 'footer/footer-links';
-
-@import 'social-media-links';
-
-@import 'hero';
-
-@import 'news-menu';
-@import 'news-menu/news-menu-mobile-part';
-
-@import 'articles-list';
-@import 'articles-list/news-articles';
-
-@import 'article-image-link';
-
-@import 'introduction';
-
-@import 'disc-switcher';
-@import 'disc-switcher/disc-content';
-
-@import 'action-list';
 
 //pages
 
