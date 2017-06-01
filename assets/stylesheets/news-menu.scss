@@ -142,9 +142,21 @@
     .search-link {
       top: auto;
       right: 52px;
-      bottom: 4px;
+      bottom: 18px;
       left: auto;
-      background-color: $black;
+      .search-svg {
+        background-color: transparent;
+      }
+      .shape,
+      .border {
+        fill: $black;
+      }
+      &:hover .search-svg{
+        background-color: $black;
+        .shape {
+          fill: $white;
+        }
+      }
     }
   }
 
