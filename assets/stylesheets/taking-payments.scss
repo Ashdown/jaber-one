@@ -1,0 +1,27 @@
+.taking-payments-page {
+  .hero {
+    .title {
+      margin-top: 145px;
+    }
+    .hero-content {
+      height: auto;
+      padding-bottom: 80px;
+    }
+  }
+  .main-title {
+    color: $dark-pink;
+  }
+}
+
+@include respond-to(desktop) {
+  .taking-payments-page {
+    .hero {
+      .title {
+        margin-top: 205px;
+      }
+      .hero-content {
+        padding-bottom: 125px;
+      }
+    }
+  }
+}

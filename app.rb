@@ -8,6 +8,11 @@ get '/processing-payments' do
   erb :processing_payments
 end
 
+get '/taking-payments' do
+  erb :taking_payments
+end
+
+
 get '/about-us' do
   erb :about_us
 end
