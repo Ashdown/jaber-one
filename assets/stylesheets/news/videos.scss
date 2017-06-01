@@ -17,10 +17,25 @@
     bottom: auto;
   }
 
-  .next-svg {
+  .play-svg {
+    @include circle(44px);
+    position: absolute;
+    overflow: hidden;
     right: auto;
     left: 15px;
     bottom: 15px;
+    opacity: 0.75;
+    .shape {
+      fill: $dark-yellow;
+    }
+    .triangle {
+      fill: $white;
+    }
+  }
+  .article-image-link:hover {
+    .play-svg {
+      opacity: 1;
+    }
   }
 
 }
@@ -45,7 +60,7 @@
       top: 15px;
       font-size: 20px;
     }
-    .next-svg {
+    .play-svg {
       $height: 44px;
       height: $height;
       width: $height;
@@ -61,7 +76,7 @@
     .link-text {
       top: 75px;
     }
-    .next-svg {
+    .play-svg {
       $height: 55px;
       height: $height;
       width: $height;
