@@ -19,24 +19,38 @@
     @include transition(opacity, 0.1s, linear);
   }
   .article-title,
-  .type-icon,
+  .facebook-svg,
+  .twitter-svg,
+  .youtube-svg,
+  .linked-in-svg,
   .link,
   .next-svg{
     z-index: 10;
   }
-  .type-icon,
+  .facebook-svg,
+  .twitter-svg,
+  .youtube-svg,
+  .linked-in-svg,
   .link,
   .image,
   .next-svg,
   .circle{
     position: absolute;
   }
-  .type-icon {
-    display: none;
-    width: 32px;
+  .facebook-svg,
+  .twitter-svg,
+  .youtube-svg,
+  .linked-in-svg, {
+    width: 60px;
     height: auto;
-    top: 13px;
-    right: 15px;
+    top: 0;
+    right: 0;
+    .border {
+      fill: transparent;
+    }
+    .shape {
+      fill: $white;
+    }
   }
   .link,
   .image {
@@ -119,7 +133,10 @@
       margin: 220px 80px 0 28px;
       text-align: left;
     }
-    .type-icon {
+    .facebook-svg,
+    .twitter-svg,
+    .youtube-svg,
+    .linked-in-svg {
       top: 24px;
       right: 18px;
       width: 50px;
