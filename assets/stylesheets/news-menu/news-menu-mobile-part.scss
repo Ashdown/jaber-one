@@ -9,6 +9,18 @@
     left: 15px;
     height: 38px;
     width: 38px;
+    .filter-svg {
+      @include circle(38px);
+    }
+    .shape {
+      fill: $purple;
+      @include transition(fill, 0.1s, linear);
+    }
+
+  }
+
+  .menu-link:hover .shape {
+    fill: $white;
   }
 
   .link-item {

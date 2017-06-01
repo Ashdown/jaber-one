@@ -17,17 +17,19 @@
     margin: 0 8px;
   }
 
-  .icon {
-    $height: 40px;
-    height: $height;
-    width: $height;
-    border-radius: $height / 2;
-    background-color: $maroon;
+  .next-svg {
+    @include circle(40px);
     opacity: 0.75;
-    display: inline-block;
+    .shape {
+      fill: $maroon;
+    }
     &:hover {
       opacity: 1;
     }
+  }
+
+  .previous .next-svg {
+    @include rotate(180deg);
   }
 
 }

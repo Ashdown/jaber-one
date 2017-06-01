@@ -1,14 +1,13 @@
-@include respond-to(desktop) {
-  .article-page {
-    background-color: #f3f3f8;
-    .news-menu {
-      margin-top: 73px;
-    }
+.article-page {
+  .news-menu {
+    margin-top: 73px;
   }
 }
 
 @include respond-to(desktop) {
   .article-page {
+    background-color: #f3f3f8;
+
     .news-menu {
       margin-top: 144px;
     }
