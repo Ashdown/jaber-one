@@ -3,7 +3,7 @@
   .link,
   .link-text,
   .background-circle,
-  .chevron-circle {
+  .next-svg {
     position: absolute;
   }
   .image-container {
@@ -33,12 +33,11 @@
     top: 115px;
     left: -120px;
   }
-  .chevron-circle {
-    $height: 44px;
-    height: $height;
-    width: $height;
-    border-radius: $height / 2;
-    background-color: $dark-yellow;
+  .next-svg {
+    @include circle(44px);
+    .shape {
+      fill: $dark-yellow;
+    }
     right: 15px;
     bottom: 18px;
   }
@@ -78,11 +77,8 @@
       top: auto;
       bottom: -200px;
     }
-    .chevron-circle {
-      $height: 55px;
-      height: $height;
-      width: $height;
-      border-radius: $height / 2;
+    .next-svg {
+      @include circle(55px);
       right: 20px;
       bottom: 30px;
     }

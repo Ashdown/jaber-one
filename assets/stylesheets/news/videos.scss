@@ -17,7 +17,7 @@
     bottom: auto;
   }
 
-  .chevron-circle {
+  .next-svg {
     right: auto;
     left: 15px;
     bottom: 15px;
@@ -42,7 +42,7 @@
       top: 15px;
       font-size: 20px;
     }
-    .chevron-circle {
+    .next-svg {
       $height: 44px;
       height: $height;
       width: $height;
@@ -58,7 +58,7 @@
     .link-text {
       top: 75px;
     }
-    .chevron-circle {
+    .next-svg {
       $height: 55px;
       height: $height;
       width: $height;
