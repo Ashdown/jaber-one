@@ -13,12 +13,18 @@
     .background-circle {
       height: 500px;
       width: 500px;
-      top: -60px;
+      bottom: -310px;
       left: -220px;
     }
     .extract,
     .date {
       display: none;
+    }
+    &:hover {
+      .background-circle {
+        height: 520px;
+        width: 520px;
+      }
     }
   }
 }
@@ -76,6 +82,11 @@
       .date {
         top: 305px;
       }
+      .background-circle {
+        @include circle(1500px);
+        bottom: -920px;
+        left: -500px;
+      }
       .pencil-icon {
         display: inline-block;
         $height: 30px;
@@ -97,6 +108,11 @@
         bottom: auto;
         left: 568px;
 
+      }
+      &:hover {
+        .background-circle {
+          @include circle(1600px);
+        }
       }
 
     }

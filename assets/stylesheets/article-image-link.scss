@@ -24,17 +24,20 @@
     right: 145px;
     bottom: 25px;
     left: 20px;
+    opacity: 0.75;
   }
   .background-circle {
     height: 400px;
     width: 400px;
     border-radius: 300px;
     background-color: rgba(0, 0, 0, 0.5);
-    top: 115px;
+    bottom: -220px;
     left: -120px;
+    @include transition(all, 0.2s, linear);
   }
   .next-svg {
     @include circle(44px);
+    opacity: 0.75;
     .shape {
       fill: $dark-yellow;
     }
@@ -49,6 +52,16 @@
   }
   .extract {
     display: none;
+  }
+  &:hover {
+    .background-circle {
+      height: 420px;
+      width: 420px;
+    }
+    .next-svg,
+    .link-text{
+      opacity: 1;
+    }
   }
 }
 
@@ -72,10 +85,10 @@
       left: 25px;
     }
     .background-circle {
-      left: auto;
-      right: 44px;
-      top: auto;
-      bottom: -200px;
+      left: -80px;
+      bottom: -210px;
+      width: 420px;
+      height: 420px;
     }
     .next-svg {
       @include circle(55px);
@@ -88,6 +101,12 @@
       padding: 30px 15px 0 15px;
       line-height: 1.2em;
       height: 165px;
+    }
+    &:hover {
+      .background-circle {
+        height: 460px;
+        width: 460px;
+      }
     }
   }
 }
