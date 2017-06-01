@@ -1,0 +1,26 @@
+.about-us-hero{
+  .title {
+    margin-top: 145px;
+  }
+  .yellow-button-link {
+    margin-top: 50px;
+  }
+  .hero-content {
+    height: auto;
+    padding-bottom: 40px;
+  }
+}
+
+@include respond-to(desktop) {
+  .about-us-hero {
+    .title {
+      margin-top: 245px;
+    }
+    .yellow-button-link {
+      margin-top: 100px;
+      width: auto;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+}

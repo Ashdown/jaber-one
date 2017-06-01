@@ -38,16 +38,21 @@
 
 @import 'article-image-link';
 
+@import 'introduction';
+
 //pages
 
 @import 'homepage/homepage-hero';
 @import 'homepage/showcase';
 
+@import 'processing-payments-page';
 @import 'processing-payments/processing-payments-hero';
 @import 'processing-payments/hero-nav-menu';
-@import 'processing-payments/introduction';
 @import 'processing-payments/disc-switcher';
 @import 'processing-payments/disc-content';
+
+@import 'about-us-page';
+@import 'about-us/about-us-hero';
 
 @import 'news/news-hero';
 @import 'news/news-menu-content';
@@ -63,3 +68,4 @@
 @import 'article-page';
 @import 'article/story';
 @import 'article/story-pagination';
+
