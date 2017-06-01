@@ -1,5 +1,5 @@
 <div class="article-page">
-    <%= erb :news_menu %>
+    <%= erb :'_partials/news_menu' %>
     <%= erb :'article/story' %>
-    <%= erb :articles_list, :locals => {:title => 'Top stories'} %>
+    <%= erb :'_partials/articles_list', :locals => {:title => 'Top stories'} %>
 </div>
