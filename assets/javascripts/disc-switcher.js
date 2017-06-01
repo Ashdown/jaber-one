@@ -28,7 +28,7 @@
 
     $this.find('.close-link').on('click', function(event) {
         event.preventDefault();
-        $('.introduction')[0].scrollIntoView(true)
+        $('.introduction')[0].scrollIntoView(true);
     });
 
     $(window).resize(function() {
