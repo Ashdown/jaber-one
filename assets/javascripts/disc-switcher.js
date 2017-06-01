@@ -26,6 +26,11 @@
 
     });
 
+    $this.find('.close-link').on('click', function(event) {
+        event.preventDefault();
+        $('.introduction')[0].scrollIntoView(true)
+    });
+
     $(window).resize(function() {
         setContainerHeight($this.find('.disc-item.selected .container'));
     });
