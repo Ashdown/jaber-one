@@ -10,37 +10,22 @@
   &.hidden {
     display: none;
   }
-  .icon {
-    $height: 42px;
-    height: $height;
-    width: $height;
-    border-radius: $height / 2;
-    display: block;
-    margin: 0 auto;
-    background-color: $purple;
-  }
-  .link-text {
-    color: $purple;
-    font-size: 14px;
-    margin-top: 15px;
-    display: block;
-    @include ag-bold();
+  .load-more-svg {
+    width: 76px;
+    height: auto;
   }
 
+  .shape {
+    fill : $purple
+  }
 }
 
 @include respond-to(desktop) {
   .load-more-link {
     clear: both;
     margin-top: 0;
-    .icon {
-      $height: 52px;
-      height: $height;
-      width: $height;
-      border-radius: $height / 2;
-    }
-    .link-text {
-      font-size: 20px;
+    .load-more-svg {
+      width: 88px;
     }
   }
 }
