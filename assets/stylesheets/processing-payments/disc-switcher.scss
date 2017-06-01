@@ -18,15 +18,12 @@
     display: block;
     color: $black;
   }
-  .icon {
-    $icon-height: 105px;
-    width: $icon-height;
-    height: $icon-height;
-    border-radius: $icon-height / 2;
-    border: 2px solid $black;
-    display: block;
+  .svg {
+    @include circle(105px);
     margin-top: 14px;
+    display: block;
   }
+
   .connector-line {
     width: 2px;
     height: 80px;
@@ -51,13 +48,19 @@
       .disc-link {
         color: $color;
       }
-      .icon {
-        border-color: $color;
+
+      .border,
+      .shape {
+        fill: $color;
       }
+
       &.selected {
-        .icon,
+        .svg,
         .connector-line {
           background: $color;
+        }
+        .shape {
+          fill: $white;
         }
       }
       .container {
@@ -113,12 +116,11 @@
       font-size: 22px;
       margin-top: 55px;
     }
-    .icon {
-      $icon-height: 184px;
-      width: $icon-height;
-      height: $icon-height;
-      border-radius: $icon-height / 2;
-      border-width: 5px;
+    .svg {
+      @include circle(184px);
+    }
+    .connector-line {
+      height: 90px;
     }
     .connector-link {
       width: 3px;
