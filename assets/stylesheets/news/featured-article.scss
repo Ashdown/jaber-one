@@ -27,8 +27,12 @@
     font-size: 20px;
     display: block;
     line-height: 1.2em;
+    opacity: 0.75;
+    &:hover {
+      opacity: 1;
+    }
   }
-  .chevron-link {
+  .next-svg {
     display: none;
   }
 
@@ -70,13 +74,12 @@
     .image {
       margin-top: 42px;
     }
-    .chevron-link {
+    .next-svg {
       display: inline-block;
-      $height: 44px;
-      height: $height;
-      width: $height;
-      border-radius: $height / 2;
-      background-color: $dark-yellow;
+      @include circle(44px);
+      .shape {
+        fill: $dark-yellow;
+      }
       position: relative;
       top: 12px;
       margin-left: 10px;
