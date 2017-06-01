@@ -16,14 +16,16 @@
 }
 @include respond-to(desktop) {
   .introduction {
+    padding-bottom: 50px;
     .main-title {
       font-size: 48px;
       margin-top: 45px;
+      margin-bottom: 40px;
     }
     .para {
       font-size: 22px;
       width: 650px;
-      margin: 10px auto 0 auto;
+      margin: 30px auto 0 auto;
     }
   }
 }

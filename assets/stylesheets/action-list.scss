@@ -40,3 +40,26 @@
 
 
 }
+
+@include respond-to(tablet) {
+  .action-list {
+    padding-left: 120px;
+    padding-right: 120px;
+    .section-title {
+      width: auto;
+      margin-top: 72px;
+      font-size: 25px;
+    }
+    .action-item {
+      display: inline-block;
+      margin: 40px 50px 20px 50px;
+    }
+    .svg {
+      @include circle(200px);
+    }
+    .link-text {
+      font-size: 20px;
+      margin-top: 35px;
+    }
+  }
+}
