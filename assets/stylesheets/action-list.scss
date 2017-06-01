@@ -1,0 +1,42 @@
+.action-list {
+  background-color: $purple;
+  overflow: hidden;
+  margin-top: 25px;
+  padding-bottom: 40px;
+  text-align: center;
+
+  .section-title {
+    @include ag-bold();
+    font-size: 20px;
+    line-height: 1.2em;
+    color: $white;
+    width: 150px;
+    margin: 40px auto 0 auto;
+  }
+  .action-item {
+    margin: 30px auto 20px auto;
+    overflow: hidden;
+  }
+  .svg {
+    @include circle(150px);
+  }
+  .shape,
+  .border {
+    fill: $white;
+  }
+  .link-text {
+    margin-top: 15px;
+    display: block;
+  }
+  .link:hover {
+    .svg {
+      background-color: $white;
+    }
+    .shape {
+      fill: $purple;
+    }
+
+  }
+
+
+}
