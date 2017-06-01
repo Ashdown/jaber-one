@@ -24,8 +24,6 @@
 
   .content-header {
     @include ag-bold();
-    background: transparent url($image-folder + '/processing-payments/mag-glass.png') top center / 91px 69px no-repeat;
-    padding-top: 75px;
     font-size: 28px;
   }
 
@@ -49,7 +47,8 @@
     @include ag-bold();
   }
 
-  .white-button-link {
+  .white-button-link,
+  .purple-button-link{
     margin-top: 20px;
     min-width: 110px;
   }
@@ -82,8 +81,12 @@
     .button-item {
       display: inline-block;
     }
+    .purple-button-link,
     .white-button-link {
       margin: 75px 20px 0 20px;
+      padding-left: 40px;
+      padding-right: 40px;
+
     }
 
   }

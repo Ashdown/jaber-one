@@ -17,6 +17,7 @@
 @import 'yellow-button-link';
 @import 'orange-button-link';
 @import 'white-button-link';
+@import 'purple-button-link';
 
 @import 'header';
 @import 'header/main-navigation';
@@ -40,6 +41,10 @@
 
 @import 'introduction';
 
+@import 'disc-switcher';
+@import 'disc-switcher/disc-content';
+
+
 //pages
 
 @import 'homepage/homepage-hero';
@@ -48,8 +53,6 @@
 @import 'processing-payments-page';
 @import 'processing-payments/processing-payments-hero';
 @import 'processing-payments/hero-nav-menu';
-@import 'processing-payments/disc-switcher';
-@import 'processing-payments/disc-content';
 
 @import 'about-us-page';
 @import 'about-us/about-us-hero';
