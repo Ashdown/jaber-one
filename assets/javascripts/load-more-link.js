@@ -7,8 +7,10 @@
     $this.on('click', function(event) {
         event.preventDefault();
         var $currentTarget = $(event.currentTarget),
-            $list = $($this.attr('href')),
+            $list = $($currentTarget.attr('href')),
             $invisibleImageLinks = $list.find('.article-image-link.hidden');
+        console.log($currentTarget.attr('href'));
+        console.log($invisibleImageLinks.length);
         for(var i = 0; i < 3; i+=1) {
             $invisibleImageLinks.eq(i).removeClass('hidden');
         }
