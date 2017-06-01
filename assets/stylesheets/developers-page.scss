@@ -1,0 +1,32 @@
+.developers-page {
+
+  .hero {
+    .hero-content {
+      height: auto;
+      padding-bottom: 120px
+    }
+    .title {
+      margin-top: 205px;
+    }
+  }
+  .main-title {
+    color: $dark-pink;
+  }
+  .orange-button-link {
+    margin-top: 30px;
+    &:hover {
+      background-color: $white;
+      color: $orange;
+    }
+  }
+
+}
+
+@include respond-to(desktop) {
+  .developers-page {
+    .orange-button-link {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+}

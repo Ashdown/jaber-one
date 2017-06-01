@@ -12,6 +12,10 @@ get '/about-us' do
   erb :about_us
 end
 
+get '/developers' do
+  erb :developers
+end
+
 get '/news' do
   erb :news
 end
