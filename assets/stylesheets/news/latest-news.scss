@@ -87,16 +87,20 @@
         bottom: -920px;
         left: -500px;
       }
-      .pencil-icon {
+      .pencil-svg {
+        @include circle(30px);
         display: inline-block;
-        $height: 30px;
-        height: $height;
-        width: $height;
-        border-radius: $height / 2;
+
         background-color: $white;
         position: relative;
         top: 7px;
         margin-right: 10px;
+        .background {
+          fill: $white;
+        }
+        .shape {
+          fill: $black;
+        }
       }
       .next-svg {
         $height: 56px;

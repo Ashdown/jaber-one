@@ -4,7 +4,7 @@
     margin-top: 5px;
     text-align: left;
   }
-  .date {
+  .date{
     display: none;
   }
   .para,
@@ -51,17 +51,19 @@
       margin-top: 25px;
       @include ag-light();
     }
-    .pencil-icon {
-      $height: 30px;
-      height: $height;
-      width: $height;
-      border-radius: $height / 2;
-      background-color: $dark-pink;
+    .pencil-svg {
+      @include circle(30px);
       margin-right: 10px;
       position: relative;
       top: 7px;
       font-size: 22px;
       display: inline-block;
+      .background {
+        fill: $dark-pink;
+      }
+      .shape {
+        fill: $white;
+      }
 
     }
     .date-link {

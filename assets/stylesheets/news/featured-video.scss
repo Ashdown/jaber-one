@@ -62,17 +62,19 @@
       height: 40px;
       margin-top: 34px;
     }
-    .pencil-icon {
-      $height: 30px;
-      height: $height;
-      width: $height;
-      border-radius: $height / 2;
+    .pencil-svg {
+      @include circle(30px);
       margin-right: 10px;
       display: inline-block;
-      font-size: 22px;
       background-color: $dark-pink;
       position: relative;
       top: 7px;
+      .background {
+        fill: $dark-pink;
+      }
+      .shape {
+        fill: $white;
+      }
     }
 
     .video-image {
