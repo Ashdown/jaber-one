@@ -1,0 +1,16 @@
+.help-page {
+  padding-top: 73px;
+  color: $maroon;
+  text-align: center;
+  .main-title {
+    @include ag-bold();
+    font-size: 35px;
+    margin: 50px 30px 0 30px;
+  }
+  .para {
+    @include ag-light();
+    margin: 10px 15px 0 15px;
+    font-size: 14px;
+    line-height: 1.2em;
+  }
+}
