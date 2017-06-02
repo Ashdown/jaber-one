@@ -1,0 +1,37 @@
+.contact-details {
+
+  .contact-list {
+    margin-top: 20px;
+  }
+  .icon-container {
+    color: $black;
+    @include ag-regular();
+    text-align: left;
+    font-size: 16px;
+    position: relative;
+    height: 35px;
+    margin: 20px 30px 0 30px;
+    padding: 20px 0 0 65px;
+    display: block;
+  }
+  .svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include circle(55px);
+  }
+  .border,
+  .shape {
+    fill: $orange;
+  }
+  .link:hover {
+    color: $orange;
+    .svg {
+      background-color: $orange;
+      .shape {
+        fill: $white;
+      }
+    }
+
+  }
+}

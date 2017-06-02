@@ -1,0 +1,26 @@
+.address {
+  background-color: $orange;
+  margin-top: 40px;
+  padding-bottom: 40px;
+  color: $white;
+  overflow: hidden;
+  .address-title {
+    font-size: 16px;
+    @include ag-regular();
+    margin-top: 50px;
+  }
+  .para {
+    font-size: 16px;
+    @include ag-light();
+  }
+  .link {
+    font-style: italic;
+    margin-top: 40px;
+    display: block;
+    opacity: 0.75;
+    &:hover {
+      color: $white;
+      opacity: 1;
+    }
+  }
+}
