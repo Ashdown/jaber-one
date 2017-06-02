@@ -2,10 +2,10 @@
   overflow: hidden;
   background-color: $off-blue;
 
-}
-.call-back-form {
-  margin-top: 40px;
-  padding: 0 30px 120px 30px;
+  .call-back-form {
+    margin-top: 40px;
+    padding: 0 30px 120px 30px;
+  }
   .container {
     position: relative;
     border-radius: 10px;
@@ -16,7 +16,7 @@
     border: 1px solid $white;
     @include transition(border-color, 0.1s, linear);
     &.focus {
-      border-color:$purple;
+      border-color: $purple;
     }
   }
   .label-text,
@@ -57,4 +57,33 @@
   .orange-button-link {
     cursor: pointer;
   }
+}
+
+@include respond-to(desktop) {
+  .request-a-call-back {
+    width: 1008px;
+    margin: 0 auto;
+    .call-back-form {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .container {
+      margin-top: 30px;
+      margin-left: 22px;
+      margin-right: 22px;
+      width: 416px;
+      display: inline-block;
+    }
+    .long-container {
+      width: auto;
+      display: block;
+    }
+    .orange-button-link {
+      position: relative;
+      right: 40px;
+      bottom: 110px;
+      text-align: center;
+    }
+  }
+
 }
