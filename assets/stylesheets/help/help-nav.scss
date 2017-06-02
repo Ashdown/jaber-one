@@ -73,3 +73,67 @@
     }
   }
 }
+
+@include respond-to(desktop) {
+  .help-nav {
+    .nav-item{
+      width: 250px;
+      display: inline-block;
+    }
+    .link {
+      padding-top: 188px;
+      position: relative;
+      display: block;
+    }
+    .svg {
+      width: 110px;
+      position: absolute;
+      top: 24px;
+      margin-left: -55px;
+      left: 50%;
+    }
+    .shape {
+      fill: $orange;
+    }
+    .button {
+      color: $orange;
+      background-color: $white;
+    }
+    .button {
+      opacity: 1;
+      margin-top: 0;
+      padding-left: 40px;
+      padding-right: 40px;
+      display: inline-block;
+      clear: both;
+    }
+    .nav-item.current-page {
+      .svg {
+        top: 0;
+        width: 146px;
+        margin-left: -73px;
+        background-color: $orange;
+      }
+      .shape {
+        fill: $white;
+      }
+      .button {
+        color: $white;
+        background-color: $orange;
+      }
+    }
+    .link:hover {
+      .svg {
+        background-color: $orange;
+      }
+      .shape {
+        fill: $white;
+      }
+      .button {
+        color: $white;
+        background-color: $orange;
+      }
+    }
+
+  }
+}
