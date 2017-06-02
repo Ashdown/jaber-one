@@ -28,3 +28,7 @@ end
 get '/news/article' do
   erb :article
 end
+
+get '/help' do
+  erb :help
+end

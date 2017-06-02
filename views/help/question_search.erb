@@ -1,0 +1,12 @@
+<div class="question-search">
+    <p>None of the above? Try asking us a questions</p>
+    <form action="/search">
+        <div class="bordered-container">
+            <input class="keyword-field" type="text" placeholder="Type your questions here:" name="keyword" id="search" aria-invalid="false">
+            <label>
+                <input type="submit" class="submit-button">
+                <%= erb :'svg/search' %>
+            </label>
+        </div>
+    </form>
+</div>
