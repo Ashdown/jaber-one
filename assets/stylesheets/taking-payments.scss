@@ -35,6 +35,23 @@
       position: relative;
     }
   }
+  .action-list {
+    padding-bottom: 0;
+    .svg {
+      .shape,
+      .border {
+        fill: $white;
+      }
+    }
+  }
+  .credit-card-image {
+    margin: 20px 10px 0 10px;
+    width: 70px;
+    display: inline-block;
+  }
+  .view-all-link {
+    @include ag-regular();
+  }
 }
 
 @include respond-to(desktop) {

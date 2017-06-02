@@ -4,7 +4,7 @@
     var $this = $('.disc-switcher');
 
     function setContainerHeight($currentContainer) {
-        $this.css('padding-bottom', $currentContainer.height());
+        $this.css('padding-bottom', $currentContainer.height() - 10);
     }
 
     $this.find('.disc-link').on('click', function (event) {

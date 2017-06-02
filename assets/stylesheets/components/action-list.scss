@@ -37,6 +37,8 @@
   }
   .description {
     @include ag-light();
+    line-height: 1.2em;
+    margin-bottom: 30px;
   }
   .link:hover {
     .svg {
