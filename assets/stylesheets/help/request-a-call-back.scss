@@ -1,0 +1,50 @@
+.request-a-call-back {
+  overflow: hidden;
+  background-color: $off-blue;
+
+}
+.call-back-form {
+  margin-top: 40px;
+  padding: 0 30px 120px 30px;
+  .container {
+    position: relative;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 20px 20px 18px 20px;
+    display: block;
+    background-color: $white;
+  }
+  .label-text,
+  .input {
+    color: $black;
+    font-size: 16px;
+    line-height: 1.4em;
+    width: 100%;
+  }
+  .label-text {
+    top: 21px;
+    left: 20px;
+    display: block;
+    text-align: left;
+    position: absolute;
+    @include ag-light();
+    @include transition(all, 0.2s, linear);
+  }
+  .text-area {
+    height: 200px;
+  }
+  .input {
+    border: 1px solid $white;
+  }
+  .submit-button {
+    display: none;
+  }
+  .button-container {
+    margin-top: 20px;
+    text-align: right;
+    float: right;
+  }
+  .orange-button-link {
+    cursor: pointer;
+  }
+}
