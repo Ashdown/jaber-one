@@ -19,14 +19,24 @@
   }
   .svg {
     @include circle(150px);
+    display: inline-block;
   }
   .shape,
   .border {
     fill: $white;
   }
-  .link-text {
+  .action-title,
+  .description {
+    color: $white;
     margin-top: 15px;
+    font-size: 16px;
     display: block;
+  }
+  .action-title {
+    @include ag-bold();
+  }
+  .description {
+    @include ag-light();
   }
   .link:hover {
     .svg {
@@ -57,7 +67,7 @@
     .svg {
       @include circle(200px);
     }
-    .link-text {
+    .action-title {
       font-size: 20px;
       margin-top: 35px;
     }

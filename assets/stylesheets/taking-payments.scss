@@ -11,6 +11,30 @@
   .main-title {
     color: $dark-pink;
   }
+  .pay-page-header {
+    overflow: hidden;
+    position: relative;
+    padding-left: 120px;
+    height: 90px;
+    .svg,
+    .text {
+      display: block;
+    }
+    .svg {
+      width: 140px;
+      height: auto;
+      position: absolute;
+      top: -26px;
+      left: 0;
+    }
+    .text {
+      @include ag-bold();
+      font-size: 45px;
+      text-align: left;
+      line-height: 0.8em;
+      position: relative;
+    }
+  }
 }
 
 @include respond-to(desktop) {

@@ -17,14 +17,25 @@
   }
 
   .content-header,
+  .content-sub-title,
   .introduction,
   .para {
     color: $white;
   }
 
-  .content-header {
+  .content-header,
+  .content-sub-title {
     @include ag-bold();
+  }
+
+  .content-header {
     font-size: 28px;
+  }
+
+  .content-sub-title {
+    font-size: 20px;
+    line-height: 1.2em;
+    margin-top: 40px;
   }
 
   .introduction,
