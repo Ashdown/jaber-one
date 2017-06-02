@@ -1,12 +1,17 @@
 <div class="question-search">
-    <p>None of the above? Try asking us a questions</p>
-    <form action="/search">
-        <div class="bordered-container">
-            <input class="keyword-field" type="text" placeholder="Type your questions here:" name="keyword" id="search" aria-invalid="false">
-            <label>
-                <input type="submit" class="submit-button">
-                <%= erb :'svg/search' %>
-            </label>
-        </div>
+    <p class="para">
+        <span class="block-on-mobile">None of the above?</span>
+        <span class="block-on-mobile">Try asking us a question</span>
+    </p>
+
+    <form class="question-form" action="/search">
+        <label class="container">
+            <span class="label-text">Type your question here:</span>
+            <textarea class="input" name="question" id="question" aria-invalid="false" rows="3"></textarea>
+        </label>
+        <label>
+            <input type="submit" class="submit-button">
+            <%= erb :'svg/search' %>
+        </label>
     </form>
 </div>
