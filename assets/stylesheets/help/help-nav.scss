@@ -76,6 +76,7 @@
 
 @include respond-to(desktop) {
   .help-nav {
+    padding-bottom: 0;
     .nav-item{
       width: 250px;
       display: inline-block;
