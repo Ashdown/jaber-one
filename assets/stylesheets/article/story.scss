@@ -27,6 +27,9 @@
     color: $maroon;
     margin-top: 24px;
   }
+  .date {
+    display: none;
+  }
   .video-image {
     display: block;
     width: 100%;
@@ -52,6 +55,11 @@
     .story-content {
       position: static;
     }
+    .main-title,
+    .para {
+      margin-left: 15px;
+      margin-right: 50px;
+    }
 
     .main-title {
       font-size: 48px;
@@ -60,6 +68,35 @@
     }
     .para {
       font-size: 16px;
+    }
+    .intro {
+      @include ag-light();
+      color: $purple;
+      font-size: 18px;
+    }
+    .date {
+      display: block;
+      margin-top: 25px;
+      @include ag-light();
+    }
+    .pencil-svg {
+      @include circle(30px);
+      margin-right: 10px;
+      position: relative;
+      top: 7px;
+      font-size: 22px;
+      display: inline-block;
+      .background {
+        fill: $purple;
+      }
+      .shape {
+        fill: $white;
+      }
+
+    }
+    .date-link {
+      color: $purple;
+      font-style: italic;
     }
     .video-image {
       margin-top: 50px;
