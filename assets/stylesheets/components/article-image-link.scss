@@ -1,5 +1,10 @@
 .article-image-link {
   margin-top: 10px;
+  opacity: 1;
+  @include transition(opacity, 0.4s, linear);
+  &.invisible {
+    opacity: 0;
+  }
   .link,
   .link-text,
   .background-circle,

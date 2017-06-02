@@ -1,4 +1,4 @@
-(function($) {
+(function($, window) {
 
     'use strict';
 
@@ -8,13 +8,28 @@
         event.preventDefault();
         var $currentTarget = $(event.currentTarget),
             $list = $($currentTarget.attr('href')),
-            $invisibleImageLinks = $list.find('.article-image-link.hidden');
-        for(var i = 0; i < 3; i+=1) {
-            $invisibleImageLinks.eq(i).removeClass('hidden');
+            $invisibleImageLinks = $list.find('.article-image-link.hidden'),
+            counter,
+            interval;
+        for(counter = 0; counter < 3; counter+=1) {
+            $invisibleImageLinks.eq(counter).addClass('invisible').removeClass('hidden');
         }
         if($invisibleImageLinks.length <= 3) {
             $currentTarget.addClass('hidden');
         }
+
+        function revealImageLink(index) {
+            $invisibleImageLinks.eq(index).removeClass('invisible');
+        }
+        counter = 0;
+
+        interval = window.setInterval(function(){
+            if(counter >= 3) {
+                clearInterval(interval);
+            } else {
+                revealImageLink(counter++);
+            }
+        },200);
     });
 
     //turn on links if they are needed
@@ -27,4 +42,4 @@
         }
     });
 
-})(jQuery);
+})(jQuery, window);
