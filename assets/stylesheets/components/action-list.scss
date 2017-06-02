@@ -65,6 +65,7 @@
     .action-item {
       display: inline-block;
       margin: 40px 50px 20px 50px;
+      width: 200px;
     }
     .svg {
       @include circle(200px);
