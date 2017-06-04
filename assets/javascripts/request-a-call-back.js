@@ -8,7 +8,7 @@
             sParameterName,
             i;
 
-        for (i = 0; i < sURLVariables.length; i++) {
+        for (i = 0; i < sURLVariables.length; i+=1) {
             sParameterName = sURLVariables[i].split('=');
 
             if (sParameterName[0] === sParam) {
@@ -29,9 +29,6 @@
     }
 
     function isPhoneNumber(number) {
-
-        console.log(number);
-
         var regex = /^(((\+44\s?\d{4}|\(?0\d{4}\)?)\s?\d{3}\s?\d{3})|((\+44\s?\d{3}|\(?0\d{3}\)?)\s?\d{3}\s?\d{4})|((\+44\s?\d{2}|\(?0\d{2}\)?)\s?\d{4}\s?\d{4}))(\s?\#(\d{4}|\d{3}))?$/;
         return regex.test(number);
     }
@@ -105,5 +102,5 @@
         if($input.val() !== '') {
             $input.closest('.container').addClass('input-active');
         }
-    })
+    });
 })(jQuery);
