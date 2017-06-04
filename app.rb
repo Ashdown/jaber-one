@@ -32,3 +32,7 @@ end
 get '/help' do
   erb :help
 end
+
+get '/content' do
+  erb :content
+end
