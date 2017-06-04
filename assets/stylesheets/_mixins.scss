@@ -45,6 +45,6 @@
 @mixin circle($height) {
   height: $height;
   width: $height;
-  border-radius: $height / 2;
+  border-radius: 50%;
   overflow: hidden;
 }

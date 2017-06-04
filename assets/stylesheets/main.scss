@@ -23,8 +23,17 @@
 .block-on-mobile {
   display: block;
 }
+.desktop-only {
+  display: none;
+}
 @include respond-to(desktop) {
   .block-on-mobile {
     display: inline;
+  }
+  .desktop-only {
+    display: block;
+  }
+  .mobile-only {
+    display: none;
   }
 }

@@ -22,5 +22,59 @@
       color: $white;
       opacity: 1;
     }
+    .svg {
+      display: none;
+    }
+  }
+}
+
+@include respond-to(desktop) {
+  .address {
+    width: 795px;
+    margin: 105px auto 0 auto;
+    padding: 0 60px 0 118px;
+    border: 1px solid $orange;
+    background-color: $white;
+    height: 68px;
+    border-radius: 34px;
+    position: relative;
+    text-align: left;
+    .address-title,
+    .para {
+      display: inline-block;
+      font-size: 18px;
+      @include ag-regular();
+      color: $black;
+      margin-top: 25px;
+    }
+    .address-title:after {
+      content: ', ';
+    }
+    .link {
+      margin-top: 0;
+      position: absolute;
+      top: 4px;
+      right: 4px;
+      opacity: 1;
+    }
+    .search-svg {
+      @include circle(60px);
+      background-color: $orange;
+      @include transition(background-color, 0.1s, linear);
+      cursor: pointer;
+      .border {
+        fill: $orange;
+      }
+      .shape {
+        fill: $white;
+        @include transition(fill, 0.1s, linear);
+      }
+      &:hover {
+        background-color: $white;
+        .shape {
+          fill: $orange;
+        }
+      }
+    }
   }
 }

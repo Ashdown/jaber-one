@@ -35,3 +35,36 @@
 
   }
 }
+
+@include respond-to(desktop) {
+  .contact-details {
+    text-align: center;
+    .contact-list {
+      margin-top: 55px;
+    }
+    .contact-item {
+      width: 342px;
+      display: inline-block;
+    }
+    .icon-container {
+      padding: 205px 0 0 0;
+      font-size: 24px;
+      text-align: center;
+    }
+    .svg {
+      top: 25px;
+      left: 50%;
+      margin-left: -75px;
+      @include circle(130px);
+      @include transition(all, 0.2s, linear);
+    }
+    .link:hover {
+      .svg {
+        top: 0;
+        margin-left: -90px;
+        height: 180px;
+        width: 180px;
+      }
+    }
+  }
+}
