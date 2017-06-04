@@ -20,11 +20,15 @@
     }
   }
   .label-text,
-  .input {
-    color: $black;
+  .input,
+  .error-text {
     font-size: 16px;
     line-height: 1.4em;
     width: 100%;
+  }
+  .label-text,
+  .input {
+    color: $black;
   }
   .label-text {
     top: 21px;
@@ -35,6 +39,7 @@
     @include ag-light();
     @include transition(all, 0.2s, linear);
   }
+
   .input-active {
     .label-text {
       top: 5px;
@@ -56,6 +61,51 @@
   }
   .orange-button-link {
     cursor: pointer;
+  }
+  .mandatory-error-text,
+  .email-error-text,
+  .phone-number-error-text,
+  .server-error-text{
+    color: $red;
+    display: none;
+    text-align: left;
+  }
+
+  .mandatory-error-text,
+  .email-error-text,
+  .phone-number-error-text{
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+  }
+
+  .container {
+    &.in-error {
+      margin-top: 50px;
+      .label-text {
+        color: $red;
+      }
+    }
+    &.in-mandatory-error {
+      .mandatory-error-text {
+        display: block;
+      }
+    }
+    &.in-email-error {
+      .email-error-text {
+        display: block;
+      }
+    }
+    &.in-phone-number-error {
+      .phone-number-error-text {
+        display: block;
+      }
+    }
+  }
+
+  .server-error .server-error-text {
+    display: block;
   }
 }
 
@@ -83,6 +133,9 @@
       right: 40px;
       bottom: 110px;
       text-align: center;
+    }
+    .server-error-text {
+      margin: 0 22px;
     }
   }
 
