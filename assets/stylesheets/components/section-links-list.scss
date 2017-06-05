@@ -28,3 +28,17 @@
     }
   }
 }
+
+@include respond-to(desktop) {
+  .section-links-list {
+    width: 395px;
+    margin: 10px auto 50px auto;
+    .link-item {
+      margin-top: 35px;
+    }
+    .link {
+      margin-left: 65px;
+      padding-left: 30px;
+    }
+  }
+}

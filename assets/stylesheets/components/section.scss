@@ -58,6 +58,7 @@
     margin: 10px 15px 0 15px;
     .link {
       color: $dark-pink;
+      font-style: italic;
       opacity: 0.75;
       &:hover {
         opacity: 1;
@@ -71,18 +72,40 @@
   .section {
     padding-bottom: 50px;
     .main-title {
-      font-size: 48px;
-      margin-top: 45px;
+      font-size: 40px;
+      margin-top: 100px;
       margin-bottom: 40px;
     }
+    .sub-title {
+      font-size: 25px;
+      margin-top: 50px;
+    }
+    .sub-sub-title {
+      font-size: 20px;
+      margin-top: 50px;
+    }
+    .para,
+    .image,
+    .image-caption{
+      width: 680px;
+      margin-left: auto;
+      margin-right: auto;
+    }
     .para {
-      font-size: 22px;
-      width: 650px;
-      margin: 30px auto 0 auto;
+      font-size: 16px;
+      line-height: 1.4em;
+      margin-top: 30px;
+      color: $unimportant-grey;
+
+    }
+    .image {
+      margin-top: 95px;
     }
     .orange-button-link {
-      padding-left: 40px;
-      padding-right: 40px;
+      margin-top: 40px;
+      padding-left: 75px;
+      padding-right: 75px;
+      width: auto;
     }
   }
 }
