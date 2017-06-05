@@ -16,7 +16,8 @@
   .preview {
     margin-top: 20px;
     font-size: 12px;
-    line-height: 1.2em;
+    line-height: 1.4em;
+    @include ag-light();
   }
   .extract {
     display: none;
@@ -63,8 +64,9 @@
       margin-top: 25px;
     }
     .preview {
+      margin-top: 10px;
       font-size: 16px;
-      @include ag-light();
+
     }
     .go-to-link {
       font-size: 20px;
