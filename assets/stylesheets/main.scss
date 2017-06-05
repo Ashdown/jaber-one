@@ -20,6 +20,9 @@
 .hidden {
   display: none;
 }
+.strong {
+  @include ag-bold();
+}
 .block-on-mobile {
   display: block;
 }

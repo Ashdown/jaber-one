@@ -1,0 +1,44 @@
+.search-results{
+  margin: 0 22px;
+  color: $maroon;
+  .search-item {
+    padding-bottom: 30px;
+    border-bottom: 1px solid $purple;
+  }
+  .search-title {
+    margin-top: 30px;
+    font-size: 16px;
+  }
+  .extract {
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 1.2em;
+  }
+  .link {
+    color: $orange;
+    font-style: italic;
+    opacity: 0.75;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .read-more-link {
+    color: $maroon;
+    font-style: normal;
+    display: inline-block;
+    border-bottom: 1px solid $maroon;
+  }
+  .go-to-link {
+    font-style: normal;
+    margin-top: 20px;
+    padding-bottom: 5px;
+    display: inline-block;
+    border-bottom: 1px solid $orange;
+  }
+  .image {
+    width: 100%;
+    display: block;
+    margin-top: 30px;
+  }
+
+}
