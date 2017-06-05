@@ -15,7 +15,7 @@
         };
 
     var checkForSlick = function() {
-        if (window.innerWidth < 1024) {
+        if (window.innerWidth < 640) {
 
             if(!slickCreated) {
                 slickCreated = true;

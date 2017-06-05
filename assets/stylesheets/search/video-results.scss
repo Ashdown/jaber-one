@@ -54,6 +54,23 @@
 
 }
 
+@include respond-to(tablet) {
+  .video-results {
+    text-align: center;
+    .video-item {
+      margin: 50px 0 0 0;
+      width: 194px;
+      display: inline-block;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+    .link-text {
+      height: 60px;
+    }
+  }
+}
+
 @include respond-to(desktop) {
   .video-results {
     .sub-title {
@@ -61,8 +78,6 @@
     }
     .video-item {
       margin: 50px 0 0 124px;
-      width: 194px;
-      display: inline-block;
       &:first-child {
         margin-left: 0;
       }
