@@ -2,7 +2,6 @@
   position: relative;
 
   .container {
-    position: relative;
     margin-top: 10px;
     display: block;
     background-color: $white;
@@ -15,6 +14,9 @@
   .input {
     width: 100%;
     border: none;
+    &::placeholder {
+      color: $placeholder-grey;
+    }
   }
   .label-text,
   .submit-button {
@@ -50,8 +52,20 @@
 
 @include respond-to(desktop) {
   .search-form {
+    width: 510px;
+    margin: 0 auto;
     .container {
-      padding: 20px 75px 20px 35px;
+      border-radius: 32px;
+      height: 25px;
+      padding: 16px 75px 23px 35px;
+    }
+    .input {
+      font-size: 25px;
+    }
+    .search-svg {
+      @include circle(60px);
+      top: 4px;
+      right: 4px;
     }
   }
 }

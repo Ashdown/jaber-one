@@ -5,3 +5,73 @@
     display: none;
   }
 }
+
+@include respond-to(desktop) {
+  .search-form-container {
+    position: relative;
+    margin: 55px 0 0 0;
+    .sub-menu {
+      display: block;
+      position: absolute;
+      top: 15px;
+      left: 0;
+      text-align: left;
+    }
+    .menu-item {
+      display: inline-block;
+      width: 44px;
+    }
+    .link {
+      display: inline-block;
+    }
+    .svg {
+      @include circle(44px);
+
+    }
+    .svg {
+      background-color: $white;
+      .shape,
+      .border{
+        fill: $orange;
+      }
+    }
+    .link:hover {
+      .svg {
+        background-color: $orange;
+        .shape {
+          fill: $white;
+        }
+      }
+    }
+    .filters {
+      display: block;
+      background-color: $orange;
+      overflow: hidden;
+      margin-top: 20px;
+      max-height: 0;
+      @include transition(max-height, 0.2s, linear);
+      .filter-item {
+        float: left;
+      }
+      .link {
+        color: $white;
+        font-size: 16px;
+        display: block;
+        margin: 10px;
+      }
+    }
+
+    &.filters-open {
+      .filter-svg {
+        background-color: $orange;
+        .shape {
+          fill: $white;
+        }
+      }
+      .filters {
+        max-height: 100px;
+      }
+    }
+
+  }
+}

@@ -33,7 +33,7 @@
       outline-width: 0;
     }
     &::placeholder {
-      color: $unimportant-grey;
+      color: $placeholder-grey;
     }
   }
 
@@ -84,7 +84,7 @@
     .keyword-field {
       color: $black;
       &::placeholder {
-        color: $unimportant-grey;
+        color: $placeholder-grey;
       }
     }
     .next-trans-svg {

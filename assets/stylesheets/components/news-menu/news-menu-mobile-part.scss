@@ -12,15 +12,20 @@
     .filter-svg {
       @include circle(38px);
     }
-    .shape {
+    .shape,
+    .border {
       fill: $purple;
       @include transition(fill, 0.1s, linear);
     }
 
   }
 
-  .menu-link:hover .shape {
-    fill: $white;
+  .menu-link:hover {
+    .border,
+    .shape {
+      fill: $white;
+    }
+
   }
 
   .link-item {
