@@ -8,6 +8,10 @@
     @include ag-bold();
     color: $maroon;
   }
+  .sub-title {
+    font-size: 16px;
+    color: $maroon;
+  }
 }
 
 @include respond-to(desktop) {
@@ -29,7 +33,8 @@
       margin-top: 70px;
       text-align: center;
     }
-
-
+    .sub-title {
+      font-size: 30px;
+    }
   }
 }

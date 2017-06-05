@@ -1,0 +1,55 @@
+.video-results {
+  margin-top: 30px;
+  .sub-title {
+    margin-left: 22px;
+    margin-right: 22px;
+  }
+  .video-item {
+    margin: 30px 10px 0 10px;
+    width: 144px;
+    display: block;
+  }
+  .link {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    color: $maroon;
+    line-height: 1.2em;
+    margin-top: 5px;
+  }
+  .svg {
+    @include circle(144px);
+    background-color: $white;
+  }
+  .shape,
+  .border {
+    fill: $purple;
+  }
+  .link-text {
+    display: block;
+    margin-top: 10px;
+  }
+  .play-svg {
+    opacity: 0;
+    @include circle(50px);
+    margin-top: 10px;
+    .triangle {
+      fill: $white;
+    }
+
+  }
+  .link:hover {
+    .icon-container .svg {
+      background-color: $purple;
+      .shape {
+        fill: $white;
+      }
+    }
+  }
+  .slick-active {
+    .play-svg {
+      opacity: 1;
+    }
+  }
+
+}
