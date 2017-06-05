@@ -1,0 +1,15 @@
+.help-link-container {
+  background-color: $off-blue;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 70px;
+  .main-title {
+    text-align: center;
+    margin-top: 60px;
+  }
+  .link {
+    margin-top: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
