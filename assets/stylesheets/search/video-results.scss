@@ -53,3 +53,43 @@
   }
 
 }
+
+@include respond-to(desktop) {
+  .video-results {
+    .sub-title {
+      margin: 45px 0 0 0;
+    }
+    .video-item {
+      margin: 50px 0 0 124px;
+      width: 194px;
+      display: inline-block;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+    .svg {
+      @include circle(194px);
+    }
+    .text-container {
+      display: block;
+      position: relative;
+      padding-right: 50px;
+    }
+    .link-text {
+      font-size: 20px;
+      overflow: hidden;
+      text-align: left;
+      line-height: 1.2em;
+      height: 120px;
+    }
+    .play-svg {
+      margin-top: 0;
+      @include circle(44px);
+      position: absolute;
+      top: 0;
+      right: 0;
+      opacity: 1;
+    }
+
+  }
+}
