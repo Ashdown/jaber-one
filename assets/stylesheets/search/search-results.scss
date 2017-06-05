@@ -4,14 +4,22 @@
   .search-item {
     padding-bottom: 30px;
     border-bottom: 1px solid $purple;
+    opacity: 0;
+    @include transition(opacity, 0.4s, linear);
+    &.visible {
+      opacity: 1;
+    }
   }
   .sub-title {
     margin-top: 30px;
   }
-  .extract {
+  .preview {
     margin-top: 20px;
     font-size: 12px;
     line-height: 1.2em;
+  }
+  .extract {
+    display: none;
   }
   .link {
     color: $orange;
@@ -26,6 +34,9 @@
     font-style: normal;
     display: inline-block;
     border-bottom: 1px solid $maroon;
+    &.hidden {
+      display: none;
+    }
   }
   .go-to-link {
     font-style: normal;
@@ -51,7 +62,7 @@
     .sub-title {
       margin-top: 25px;
     }
-    .extract {
+    .preview {
       font-size: 16px;
       @include ag-light();
     }
