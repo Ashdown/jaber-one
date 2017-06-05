@@ -36,3 +36,7 @@ end
 get '/content' do
   erb :content
 end
+
+get '/search' do
+  erb :search
+end

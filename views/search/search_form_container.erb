@@ -1,0 +1,41 @@
+<div class="search-form-container">
+    <ul class="sub-menu">
+        <li>
+            <a href="#">
+                <%= erb :'svg/filter' %>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <%= erb :'svg/home' %>
+            </a>
+        </li>
+    </ul>
+    <form class="search-form" action="/search">
+        <label class="container">
+            <span class="label-text">Search for</span>
+            <input class="input" name="question" id="question" aria-invalid="false" value="Payment processing"/>
+        </label>
+        <label>
+            <input type="submit" class="submit-button">
+            <%= erb :'svg/search' %>
+        </label>
+    </form>
+    <ul class="filters">
+        <li>
+            <a href="#">
+                Filter one
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                Filter two
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                Filter three
+            </a>
+        </li>
+    </ul>
+</div>
