@@ -1,5 +1,8 @@
 .homepage-hero {
   border-bottom: 2px solid $purple;
+  .hero-content {
+    height: 570px;
+  }
   .title {
     margin-top: 280px;
   }
@@ -29,13 +32,19 @@
       $image-width: 1024px;
       margin-right: -($image-width/2);
     }
+    .hero-content {
+      height: 550px;
+    }
   }
 }
 
 @include respond-to(desktop) {
   .homepage-hero {
+    .hero-content {
+      height: 840px;
+    }
     .title {
-      margin-top: 440px;
+      margin: 390px 20px 0 20px;
     }
     .button-link-item {
       display: inline-block;
@@ -49,6 +58,17 @@
       top: 0;
       $image-width: 1324px;
       margin-right: -($image-width/2);
+    }
+  }
+}
+
+@include respond-to(max) {
+  .homepage-hero {
+    .hero-content {
+      height: 900px;
+    }
+    .title {
+      margin: 450px 100px 0 100px;
     }
   }
 }
