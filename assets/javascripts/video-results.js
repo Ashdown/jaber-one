@@ -1,4 +1,7 @@
 (function($){
+
+    'use strict';
+
     var $this = $('.video-results'),
         $list = $this.find('.video-results-list'),
         slickCreated = false,
