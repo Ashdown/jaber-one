@@ -1,0 +1,30 @@
+.section-links-list {
+  margin-top: 20px;
+  padding: 0 40px;
+  text-align: left;
+  overflow: hidden;
+  .link-item {
+    margin-top: 20px;
+    display: block;
+  }
+  .link {
+    color: $dark-pink;
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.2em;
+    display: block;
+    opacity: 0.75;
+    &:hover {
+      opacity: 1;
+    }
+    &:before {
+      display: inline-block;
+      @include circle(10px);
+      background-color: $dark-pink;
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 4px;
+    }
+  }
+}
