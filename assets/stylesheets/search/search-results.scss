@@ -42,3 +42,35 @@
   }
 
 }
+
+@include respond-to(desktop) {
+  .search-results{
+    margin: 75px 0 0 0;
+    .search-item {
+      padding-bottom: 25px;
+    }
+    .search-title {
+      font-size: 30px;
+      margin-top: 25px;
+    }
+    .extract {
+      font-size: 16px;
+      @include ag-light();
+    }
+    .go-to-link {
+      font-size: 20px;
+    }
+    .search-item.with-image {
+      padding-right: 322px;
+      position: relative;
+    }
+    .image {
+      width: 302px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin-top: 0;
+    }
+
+  }
+}
