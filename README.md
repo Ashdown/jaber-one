@@ -23,6 +23,7 @@ Run App locally
 ---------------
 
 Install bundler
+
 `gem install bundler`
 
 Install required gems
