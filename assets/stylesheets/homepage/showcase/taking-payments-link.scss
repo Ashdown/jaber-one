@@ -7,6 +7,15 @@
     @include rotate(-10deg);
     z-index: 300;
     @include transition(left, 0.4s, linear);
+    .cls-1 {
+      fill: #ed3590;
+    }
+    .cls-2 {
+      fill: #3c2938;
+    }
+    .cls-3 {
+      fill: #f69ac8;
+    }
   }
 
   .mobile-svg {
@@ -15,6 +24,13 @@
     left: 50%;
     margin-left: -44px;
     z-index: 200;
+    .cls-1 {
+      fill: #ed3590;
+    }
+    .cls-2 {
+      fill: #fff;
+      opacity: 0.5;
+    }
   }
 
   .pound-sign {
@@ -32,6 +48,9 @@
     opacity: 0;
     @include transition(opacity, 0.4s, linear);
     @include transition-delay(0.8s);
+    .cls-1 {
+      fill: #ed3590;
+    }
   }
   .link-text {
     color: $dark-pink;

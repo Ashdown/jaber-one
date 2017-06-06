@@ -1,0 +1,58 @@
+.online-solution-link {
+  padding-top: 705px;
+  .gear-one-svg {
+    height: 224px;
+    top: 50px;
+    left: 12px;
+    .cls-1 {
+      fill: #858abe;
+    }
+  }
+
+  .world-payments-svg {
+    height: 90px;
+    top: 115px;
+    left: 74px;
+    .cls-1 {
+      fill: #ed3590;
+    }
+
+    .cls-2 {
+      opacity: 0.5;
+    }
+
+    .cls-3 {
+      fill: #fff;
+    }
+  }
+  .gear-two-svg {
+    height: 200px;
+    top: 269px;
+    left: 102px;
+    .cls-1 {
+      fill: #858abe;
+    }
+  }
+  .lock-svg {
+    height: 70px;
+    top: 334px;
+    left: 180px;
+    .cls-1 {
+      fill: #f8f59b;
+    }
+  }
+  .gear-three-svg {
+    height: 185px;
+    top: 462px;
+    left: 4px;
+  }
+  .link-text {
+    color: $dark-yellow
+  }
+  .next-svg {
+    .shape {
+      fill: $light-yellow;
+    }
+  }
+
+}
