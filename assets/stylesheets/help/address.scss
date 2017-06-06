@@ -41,25 +41,21 @@
 
 @include respond-to(desktop) {
   .address {
-    width: 795px;
+    width: 240px;
     margin: 105px auto 0 auto;
+    padding-top: 100px;
+    padding-bottom: 0;
     .address-title,
     .para {
-      display: inline-block;
       font-size: 18px;
-      @include ag-regular();
-      color: $black;
-      margin-top: 25px;
     }
     .address-title:after {
       content: ', ';
     }
     .link {
-      margin-top: 0;
-      position: absolute;
-      top: 4px;
-      right: 4px;
       opacity: 1;
+      width: 70px;
+      margin-left: -35px;
     }
     .search-svg {
       @include circle(60px);
