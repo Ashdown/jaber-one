@@ -1,0 +1,24 @@
+.help-hero {
+  .title {
+    margin-top: 226px;
+    font-size: 35px;
+  }
+  .hero-content {
+    height: 532px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+}
+
+@include respond-to(desktop) {
+  .help-hero {
+    .title {
+      margin-top: 320px;
+      font-size: 70px;
+    }
+    .hero-content {
+      height: 644px;
+    }
+  }
+}
