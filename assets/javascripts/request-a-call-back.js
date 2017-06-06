@@ -48,6 +48,11 @@
     $this.find('.call-back-form').on('submit', function (event) {
         var $form = $(event.currentTarget),
             formInError = false;
+
+        if($form.hasClass('submitted')) {
+            event.preventDefault();
+            return;
+        }
         $form.removeClass('server-error');
 
         $form.find('.input').each(function () {
@@ -90,6 +95,12 @@
         if (formInError) {
             event.preventDefault();
             goToByScroll('request-a-call-back');
+        } else {
+            //for has passed validation.
+            //TODO: submit the data to the back end
+            event.preventDefault();
+            $form.addClass('submitted');
+            $form.find('.dark-pink-button-link').html($form.find('.feedback-text').html());
         }
     });
 

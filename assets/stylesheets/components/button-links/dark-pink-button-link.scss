@@ -1,0 +1,25 @@
+.dark-pink-button-link {
+  display: inline-block;
+  height: 32px;
+  font-size: 16px;
+  color: $white;
+  padding: 18px 45px 0 45px;
+  border-radius: 25px;
+  border: 1px solid $dark-pink;
+  background-color: $dark-pink;
+  @include transition(background-color, 0.1s, linear);
+  &:hover {
+    background-color: $button-transparency;
+  }
+}
+
+@include respond-to(desktop) {
+  .dark-pink-button-link {
+    width: 224px;
+    font-size: 26px;
+    border-radius: 33px;
+    padding: 20px 0 0 0;
+    height: 46px;
+    border-width: 2px;
+  }
+}

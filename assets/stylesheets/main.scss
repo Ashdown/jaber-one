@@ -23,6 +23,9 @@
 .strong {
   @include ag-bold();
 }
+.italic {
+  font-style: italic;
+}
 .block-on-mobile {
   display: block;
 }
