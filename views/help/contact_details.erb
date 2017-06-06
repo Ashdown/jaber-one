@@ -1,26 +1,52 @@
 <div class="contact-details">
-    <h2 class="sub-title">Contact details</h2>
-    <p class="para desktop-only">Whether it's issues regarding implentation or payment processing, we’re here to help. </p>
-    <p class="para">Get in touch with our support team by using the following options:</p>
-    <ul class="contact-list">
-        <li class="contact-item">
-            <a class="link icon-container" href="tel:+441277268755">
-                <%= erb :'svg/mobile_phone' %>
-                <span>+44 (0) 1277 268 755</span>
-            </a>
-        </li>
-        <li class="contact-item">
+    <div id="contact-list-container">
+        <h2 class="sub-title">Contact details</h2>
+
+        <p class="para desktop-only">Whether it's issues regarding implentation or payment processing, we’re here to
+            help. </p>
+
+        <p class="para">Get in touch with our support team by using the following options:</p>
+        <ul id="contact-list" class="contact-list">
+            <li class="contact-item">
+                <a class="link icon-container" href="tel:+441277268755">
+                    <%= erb :'svg/mobile_phone' %>
+                    <span class="link-text">+44 (0) 1277 268 755</span>
+                </a>
+            </li>
+            <li class="contact-item">
             <span class="icon-container">
                 <%= erb :'svg/fax' %>
-                <span>+44 (0) 1277 268 755</span>
+                <span class="link-text">+44 (0) 1277 268 755</span>
             </span>
-        </li>
-        <li class="contact-item">
-            <a class="link icon-container" href="mailto:support@adflex.com">
-                <%= erb :'svg/e_mail' %>
-                <span>support@adflex.com</span>
-            </a>
-        </li>
-    </ul>
+            </li>
+            <li class="contact-item">
+                <a class="link icon-container" href="mailto:support@adflex.com">
+                    <%= erb :'svg/e_mail' %>
+                    <span class="link-text">support@adflex.com</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="contact-information-container">
+        <h2 class="sub-title">Contact information</h2>
+
+        <p class="para">Our support teams are currently not available, please use the following options below.</p>
+
+        <p class="para">Otherwise we are available 7 days a week, 9am - 6pm EST</p>
+        <ul id="contact-information" class="contact-list">
+            <li class="contact-item">
+                <a class="link icon-container" href="#">
+                    <%= erb :'svg/live_chat' %>
+                    <span class="link-text">Live chat</span>
+                </a>
+            </li>
+            <li class="contact-item">
+                <a class="link icon-container" href="#">
+                    <%= erb :'svg/call_back' %>
+                    <span class="link-text">Request a call back</span>
+                </a>
+            </li>
+        </ul>
+    </div>
     <%= erb :'help/address' %>
 </div>

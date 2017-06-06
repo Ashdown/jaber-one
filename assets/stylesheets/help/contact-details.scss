@@ -47,24 +47,27 @@
       display: inline-block;
     }
     .icon-container {
-      padding: 205px 0 0 0;
+      padding: 190px 0 0 0;
       font-size: 24px;
       text-align: center;
+      margin-left: 40px;
+      margin-right: 40px;
     }
     .svg {
       top: 25px;
       left: 50%;
-      margin-left: -75px;
+      margin-left: -65px;
       @include circle(130px);
       @include transition(all, 0.2s, linear);
     }
-    .link:hover {
-      .svg {
-        top: 0;
-        margin-left: -90px;
-        height: 180px;
-        width: 180px;
-      }
+    .link-text {
+      display: block;
+      padding: 19px 0 17px 0;
+      height: 24px;
+      font-size: 20px;
+      border-radius: 30px;
+      background-color: $dark-pink;
+      color: $white;
     }
   }
 }
