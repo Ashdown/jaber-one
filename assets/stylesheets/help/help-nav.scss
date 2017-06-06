@@ -14,14 +14,14 @@
     @include transition(all, 0.2s, linear);
   }
   .border {
-    fill: $orange;
+    fill: $dark-pink;
   }
   .shape {
-    fill: $orange;
+    fill: $dark-pink;
   }
   .other-svg {
-    border: 1px solid $orange;
-    background-color: $orange;
+    border: 1px solid $dark-pink;
+    background-color: $dark-pink;
 
     .shape {
       fill: $white;
@@ -36,8 +36,8 @@
     padding: 16px 10px 0 10px;
     margin-top: 30px;
     border-radius: 25px;
-    border: 2px solid $orange;
-    background-color: $orange;
+    border: 2px solid $dark-pink;
+    background-color: $dark-pink;
     text-overflow: ellipsis;
     overflow: hidden;
     opacity: 0;
@@ -47,7 +47,7 @@
     .svg {
       margin-top: 0;
       width: 70%;
-      background-color: $orange;
+      background-color: $dark-pink;
     }
     .shape {
       fill: $white;
@@ -59,7 +59,7 @@
       background-color: $white;
 
       .shape {
-        fill: $orange;
+        fill: $dark-pink;
       }
     }
   }
@@ -68,17 +68,17 @@
       background-color: $white;
     }
     .shape {
-      fill: $orange;
+      fill: $dark-pink;
     }
     .other-svg {
       background-color: $white;
 
       .shape {
-        fill: $orange;
+        fill: $dark-pink;
       }
     }
     .button {
-      color: $orange;
+      color: $dark-pink;
       background-color: $white;
     }
   }
@@ -116,10 +116,10 @@
       left: 50%;
     }
     .shape {
-      fill: $orange;
+      fill: $dark-pink;
     }
     .button {
-      color: $orange;
+      color: $dark-pink;
       background-color: $white;
     }
     .button {
@@ -135,32 +135,32 @@
         top: 0;
         width: 146px;
         margin-left: -73px;
-        background-color: $orange;
+        background-color: $dark-pink;
       }
       .shape {
         fill: $white;
       }
       .button {
         color: $white;
-        background-color: $orange;
+        background-color: $dark-pink;
       }
     }
     .link:hover {
       .svg {
-        background-color: $orange;
+        background-color: $dark-pink;
       }
       .shape {
         fill: $white;
       }
       .button {
         color: $white;
-        background-color: $orange;
+        background-color: $dark-pink;
       }
       .other-svg {
         background-color: $white;
 
         .shape {
-          fill: $orange;
+          fill: $dark-pink;
         }
       }
     }
