@@ -1,3 +1,57 @@
+.showcase {
+  background-color: $maroon;
+  overflow: hidden;
+
+  .sub-title,
+  .link-text{
+    @include ag-bold();
+    color: white;
+    font-size: 24px;
+    line-height: 1.2em;
+    text-align: center;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  .sub-title {
+    margin-top: 80px;
+  }
+
+
+  .link {
+    position: relative;
+    display: block;
+    padding-bottom: 58px;
+  }
+
+  .svg {
+    position: absolute;
+    width: auto;
+  }
+
+  .link-text {
+    display: block;
+    opacity: 0.75;
+  }
+  .next-svg {
+    width: 46px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -23px;
+    opacity: 0.75;
+    .shape {
+      fill: $light-pink;
+    }
+  }
+  .link:hover {
+    .link-text,
+    .next-svg {
+      opacity: 1;
+    }
+  }
+
+}
+
 //.showcase {
 //  background: #3c2938 url('/assets/homepage/showcase/mobile.png') top center / 320px 2022px no-repeat;
 //  height: 2022px;

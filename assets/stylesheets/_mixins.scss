@@ -35,6 +35,13 @@
   transition: $property $duration $type;
 }
 
+@mixin transition-delay($delay) {
+  -webkit-transition-delay: $delay;
+  -moz-transition-delay: $delay;
+  -o-transition-delay: $delay;
+  transition-delay: $delay;
+}
+
 @mixin rotate($deg) {
   -ms-transform: rotate($deg);
   -webkit-transform: rotate($deg);

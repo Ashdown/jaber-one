@@ -1,0 +1,52 @@
+.taking-payments-link {
+  padding-top: 410px;
+  .hand-svg {
+    height: 180px;
+    top: 140px;
+    left: -170px;
+    @include rotate(-10deg);
+    z-index: 300;
+    @include transition(left, 0.4s, linear);
+  }
+
+  .mobile-svg {
+    height: 155px;
+    top: 54px;
+    left: 50%;
+    margin-left: -44px;
+    z-index: 200;
+  }
+
+  .pound-sign {
+    opacity: 0;
+    @include transition(opacity, 0.4s, linear);
+    @include transition-delay(0.4s);
+  }
+
+  .waves-svg {
+    height: 110px;
+    top: 240px;
+    left: 50%;
+    margin-left: -69px;
+    z-index: 100;
+    opacity: 0;
+    @include transition(opacity, 0.4s, linear);
+    @include transition-delay(0.8s);
+  }
+  .link-text {
+    color: $dark-pink;
+  }
+
+  &.animate {
+    .hand-svg {
+      left: -90px;
+    }
+    .pound-sign {
+      opacity: 1;
+    }
+    .waves-svg {
+      opacity: 1;
+    }
+  }
+
+}
