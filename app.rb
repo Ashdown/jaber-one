@@ -40,3 +40,11 @@ end
 get '/search' do
   erb :search
 end
+
+get '/404' do
+  erb :page_not_found
+end
+
+get '/500' do
+  erb :server_error
+end
