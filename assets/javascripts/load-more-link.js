@@ -27,7 +27,8 @@
             if(counter >= 3) {
                 clearInterval(interval);
             } else {
-                revealImageLink(counter+=1);
+                revealImageLink(counter);
+                counter +=1;
             }
         },200);
     });
