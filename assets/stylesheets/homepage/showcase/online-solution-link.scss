@@ -119,3 +119,38 @@
     @include rotate(360deg);
   }
 }
+
+@include respond-to(max) {
+  .online-solution-link {
+    .gear-one-svg {
+      top: 98px;
+      left: 100px;
+      height: 155px;
+    }
+    .world-payments-svg {
+      top: 143px;
+      left: 144px;
+      height: 62px;
+    }
+    .gear-two-svg {
+      top: 235px;
+      left: 190px;
+      height: 145px;
+    }
+    .lock-svg {
+      top: 280px;
+      left: 246px;
+      height: 55px;
+    }
+    .gear-three-svg {
+      top: 364px;
+      left: 120px;
+      height: 125px;
+    }
+    .chip-svg {
+      height: 38px;
+      left: 163px;
+      top: 407px;
+    }
+  }
+}
