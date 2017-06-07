@@ -16,6 +16,9 @@
 
   .link {
     display: inline-block;
+    &.selected {
+      @include ag-bold();
+    }
   }
 
   .small-link {
@@ -46,6 +49,7 @@
   .bottom-links .link {
     opacity: 0.75;
     @include transition(opacity, 0.1s, linear);
+    &.selected,
     &:hover {
       opacity: 1;
     }
