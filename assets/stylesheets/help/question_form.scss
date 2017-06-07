@@ -82,7 +82,7 @@
     .container {
       margin-top: 0;
       border-radius: 35px;
-      padding: 22px 75px 18px 100px;
+      padding: 20px 75px 18px 100px;
 
     }
     .label-text {
@@ -90,7 +90,7 @@
     }
     .input {
       font-size: 26px;
-      height: 30px;
+      height: 32px;
       @include ag-light();
       text-align: center;
       &::placeholder {
