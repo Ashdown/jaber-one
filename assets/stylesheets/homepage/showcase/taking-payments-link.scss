@@ -106,3 +106,31 @@
     }
   }
 }
+
+@include respond-to(max) {
+  .taking-payments-link {
+    .container {
+      margin: 0;
+    }
+    .hand-svg {
+      top: 240px;
+      height: 175px;
+    }
+    .mobile-svg {
+      top: 203px;
+      height: 185px;
+      margin-left: -52px;
+    }
+    .waves-svg {
+      top: 404px;
+      height: 75px;
+      margin-left: -47px;
+    }
+    &.animate {
+      .hand-svg {
+        left: -70px;
+      }
+    }
+
+  }
+}
