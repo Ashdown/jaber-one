@@ -34,6 +34,7 @@
 
   .cls-1.pound-sign {
     opacity: 0;
+    @include transition(opacity, 0.2s, linear);
     &.first {
       @include transition-delay(0.8s);
     }
@@ -135,7 +136,7 @@
     }
     &.animate {
       .hand-svg {
-        left: -0px;
+        left: -70px;
       }
     }
 

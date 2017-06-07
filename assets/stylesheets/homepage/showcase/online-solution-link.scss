@@ -7,7 +7,6 @@
     @include transition(fill, 0.2s, linear);
   }
 
-
   .gear-one-svg {
     height: 224px;
     top: 50px;
@@ -88,7 +87,7 @@
       }
     }
     .gear-two-svg,
-    .gear-three-svg{
+    .gear-three-svg {
       .cls-1 {
         fill: $dark-yellow;
       }
@@ -106,10 +105,14 @@
 
   }
   &.animate {
-    .gear-one-svg,
-    .gear-two-svg,
-    .gear-three-svg{
-      animation:spin 4s linear infinite;
+    .gear-one-svg {
+      animation: spin 2.8s linear infinite;
+    }
+    .gear-two-svg {
+      animation: spin-back 3.2s linear infinite;
+    }
+    .gear-three-svg {
+      animation: spin 2.0s linear infinite;
     }
   }
 
@@ -118,6 +121,11 @@
 @keyframes spin {
   100% {
     @include rotate(360deg);
+  }
+}
+@keyframes spin-back {
+  100% {
+    @include rotate(-360deg);
   }
 }
 
@@ -137,6 +145,7 @@
       top: 235px;
       left: 190px;
       height: 145px;
+
     }
     .lock-svg {
       top: 280px;
@@ -153,5 +162,18 @@
       left: 163px;
       top: 407px;
     }
+    &.animate {
+      .gear-one-svg {
+        animation-delay: 2s;
+      }
+      .gear-two-svg {
+        animation-delay: 2.6s;
+      }
+      .gear-three-svg {
+        animation-delay: 3.2s;
+      }
+
+    }
   }
+
 }

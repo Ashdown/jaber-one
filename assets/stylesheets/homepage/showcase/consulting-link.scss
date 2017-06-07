@@ -81,7 +81,7 @@
   }
   &.animate {
     .gear-four-svg {
-      animation: spin 4s linear infinite;
+      animation: spin 3.2s linear infinite;
     }
     .movable-plug {
       transform: translate(0, 0);
@@ -91,7 +91,7 @@
 
 @keyframes spin {
   100% {
-    @include rotate(360deg);
+    @include rotate(-360deg);
   }
 }
 
@@ -126,7 +126,18 @@
     .light-bulb-svg {
       top: 83px;
       left: 302px;
-      height: 260px
+      height: 260px;
+      .cls-1,
+      .cls-2 {
+        @include transition-delay(4.4s);
+      }
+
+    }
+    &.animate {
+      .gear-four-svg {
+        animation-delay: 3.6s;
+      }
     }
   }
+
 }

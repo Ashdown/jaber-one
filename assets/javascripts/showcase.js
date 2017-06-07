@@ -20,9 +20,13 @@
         $links.each(function(){
             var $link = $(this);
             if(elementScrolled($link)) {
-                $link.addClass('animate').addClass('active');
+                if(!$link.hasClass('animate')) {
+                    $link.addClass('animate').addClass('active');
+                }
             } else {
-                $link.removeClass('animate').removeClass('active');
+                if($link.hasClass('animate')) {
+                    $link.removeClass('animate').removeClass('active');
+                }
             }
         });
     }
