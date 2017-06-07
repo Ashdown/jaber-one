@@ -22,7 +22,7 @@
         $this.toggleClass('open');
     });
 
-    $this.find('.main-menu .link').on('click', function(event) {
+    $this.find('.main-menu .link-item .link').on('click', function(event) {
 
         var href = $(event.currentTarget).attr('href');
 
