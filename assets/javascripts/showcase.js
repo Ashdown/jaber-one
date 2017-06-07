@@ -15,25 +15,25 @@
         return ((elemTop <= docViewBottom) && (elemBottom >= docViewTop));
     }
 
-//    $(window).scroll(function(){
-//        $links.each(function(){
-//            var $link = $(this);
-//            if(elementScrolled($link)) {
-//                $link.addClass('animate').addClass('active');
-//            } else {
-//                $link.removeClass('animate').removeClass('active');
-//            }
-//        });
-//
-//    });
+    $(window).scroll(function(){
+        $links.each(function(){
+            var $link = $(this);
+            if(elementScrolled($link)) {
+                $link.addClass('animate').addClass('active');
+            } else {
+                $link.removeClass('animate').removeClass('active');
+            }
+        });
+
+    });
 
     $this.find('.link').mouseenter(function(event) {
         $(event.currentTarget).removeClass('active');
-        $(event.currentTarget).removeClass('animate');
+//        $(event.currentTarget).removeClass('animate');
     }).mouseleave(function(event){
         if(elementScrolled($(event.currentTarget))) {
             $(event.currentTarget).addClass('active');
-            $(event.currentTarget).addClass('animate');
+//            $(event.currentTarget).addClass('animate');
         }
     });
 

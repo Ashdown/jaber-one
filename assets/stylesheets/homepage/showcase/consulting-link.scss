@@ -102,3 +102,31 @@
     }
   }
 }
+
+@include respond-to(max){
+  .consulting-link {
+    .container {
+      margin-top: 0;
+    }
+    .gear-four-svg {
+      top: 253px;
+      left: 110px;
+      height: 200px;
+    }
+    .i-phone-svg {
+      height: 68px;
+      left: 190px;
+      top: 318px;
+    }
+    .plug-svg {
+      top: 335px;
+      left: 285px;
+      height: 78px;
+    }
+    .light-bulb-svg {
+      top: 83px;
+      left: 302px;
+      height: 260px
+    }
+  }
+}
