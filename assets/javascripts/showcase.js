@@ -3,7 +3,7 @@
 
     var $this = $('.showcase'),
         $links = $this.find('.link'),
-        scrollOffset = 150;
+        scrollOffset = 200;
 
     //function checks if an element has scrolled into view
     function elementScrolled(elem) {

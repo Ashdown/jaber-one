@@ -55,18 +55,6 @@
     color: $dark-pink;
   }
 
-  &.animate {
-    .hand-svg {
-      left: -90px;
-    }
-    .pound-sign {
-      opacity: 1;
-    }
-    .waves-svg {
-      opacity: 1;
-    }
-  }
-
   &.active {
     .hand-svg {
       .cls-1 {
@@ -94,5 +82,18 @@
     }
 
   }
+  &.animate {
+    .hand-svg {
+      left: -90px;
+    }
+    .pound-sign {
+      opacity: 1;
+    }
+    .waves-svg {
+      opacity: 1;
+    }
+  }
+
+
 
 }

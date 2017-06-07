@@ -1,44 +1,53 @@
 .consulting-link {
   padding-top: 473px;
+  .cls-1,
+  .cls-2 {
+    @include transition(fill, 0.2s, linear);
+  }
   .gear-four-svg {
-    height: 230px;
-    left: -20px;
-    top: 205px;
+    height: 225px;
+    left: -25px;
+    top: 215px;
+    z-index: 3;
     .cls-1 {
-      fill: #00a0b0;
+      fill: $purple;
     }
   }
   .i-phone-svg {
-    height: 85px;
-    left: 62px;
-    top: 285px;
+    height: 78px;
+    left: 63px;
+    top: 289px;
     .cls-1 {
-      fill: #00a0b0;
+      fill: $purple;
     }
 
     .cls-2 {
-      fill: #80d0d8;
+      fill: $purple;
     }
   }
-  .plug-svg {
-    height: 104px;
-    top: 308px;
-    left: 180px;
+  .plug-svg,
+  .light-bulb-svg {
     transform: scaleX(-1);
+  }
+  .plug-svg {
+    height: 100px;
+    top: 298px;
+    left: 180px;
+    z-index: 2;
     .cls-1 {
-      fill: #00a0b0;
+      fill: $purple;
     }
   }
   .light-bulb-svg {
     height: 284px;
-    left: 208px;
-    top: 20px;
+    left: 210px;
+    top: 23px;
     .cls-1 {
-      fill: #00a0b0;
+      fill: $purple;
     }
 
     .cls-2 {
-      fill: #80d0d8;
+      fill: $purple;
     }
   }
   .link-text {
@@ -47,6 +56,36 @@
   .next-svg {
     .shape {
       fill: $light-turquoise;
+    }
+  }
+  &.active {
+    .gear-four-svg {
+      .cls-1 {
+        fill: $dark-turquoise;
+      }
+    }
+    .i-phone-svg {
+      .cls-1 {
+        fill: $dark-turquoise;
+      }
+
+      .cls-2 {
+        fill: $light-turquoise;
+      }
+    }
+    .plug-svg {
+      .cls-1 {
+        fill: $dark-turquoise;
+      }
+    }
+    .light-bulb-svg {
+      .cls-1 {
+        fill: $dark-turquoise;
+      }
+
+      .cls-2 {
+        fill: $light-turquoise;
+      }
     }
   }
 }

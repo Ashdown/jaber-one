@@ -1,11 +1,19 @@
 .online-solution-link {
   padding-top: 705px;
+
+  .cls-1,
+  .cls-2,
+  .cls-3 {
+    @include transition(fill, 0.2s, linear);
+  }
+
+
   .gear-one-svg {
     height: 224px;
     top: 50px;
     left: 12px;
     .cls-1 {
-      fill: #858abe;
+      fill: $purple;
     }
   }
 
@@ -14,7 +22,7 @@
     top: 115px;
     left: 74px;
     .cls-1 {
-      fill: #ed3590;
+      fill: $purple;
     }
 
     .cls-2 {
@@ -22,23 +30,26 @@
     }
 
     .cls-3 {
-      fill: #fff;
+      fill: $white;
+    }
+  }
+  .gear-two-svg,
+  .gear-three-svg {
+    .cls-1 {
+      fill: $purple;
     }
   }
   .gear-two-svg {
     height: 200px;
     top: 269px;
     left: 102px;
-    .cls-1 {
-      fill: #858abe;
-    }
   }
   .lock-svg {
     height: 70px;
     top: 334px;
-    left: 180px;
+    left: 182px;
     .cls-1 {
-      fill: #f8f59b;
+      fill: $purple;
     }
   }
   .gear-three-svg {
@@ -48,10 +59,10 @@
   }
   .chip-svg {
     height: 55px;
-    left: 62px;
+    left: 66px;
     top: 527px;
     .cls-1 {
-      fill: #f8f59b;
+      fill: $purple;
     }
   }
   .link-text {
@@ -63,4 +74,48 @@
     }
   }
 
+  &.active {
+
+    .world-payments-svg {
+      .cls-1 {
+        fill: $dark-pink;
+      }
+    }
+    .gear-one-svg {
+      .cls-1 {
+        fill: $dark-pink;
+      }
+    }
+    .gear-two-svg,
+    .gear-three-svg{
+      .cls-1 {
+        fill: $dark-yellow;
+      }
+    }
+    .lock-svg {
+      .cls-1 {
+        fill: $light-yellow;
+      }
+    }
+    .chip-svg {
+      .cls-1 {
+        fill: $light-yellow;
+      }
+    }
+
+  }
+  &.animate {
+    .gear-one-svg,
+    .gear-two-svg,
+    .gear-three-svg{
+      animation:spin 4s linear infinite;
+    }
+  }
+
+}
+
+@keyframes spin {
+  100% {
+    @include rotate(360deg);
+  }
 }
