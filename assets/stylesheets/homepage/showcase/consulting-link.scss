@@ -94,3 +94,11 @@
     @include rotate(360deg);
   }
 }
+
+@include respond-to(desktop){
+  .consulting-link {
+    .container {
+      margin-top: 190px;
+    }
+  }
+}

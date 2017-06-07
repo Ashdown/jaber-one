@@ -52,3 +52,36 @@
   }
 
 }
+
+@include respond-to(desktop) {
+  .showcase {
+    position: relative;
+    text-align: center;
+    .sub-title {
+      top: 50px;
+      left: 30px;
+      width: 250px;
+      position: absolute;
+      font-size: 35px;
+      margin: 0;
+    }
+    .showcase-item {
+      display: inline-block;
+      margin: 0 5px;
+    }
+    .link {
+      padding-top: 0;
+      height: 755px;
+      display: inline-block;
+    }
+    .link-text {
+      position: absolute;
+      bottom: 70px;
+      left: 0;
+      right: 0;
+    }
+    .container {
+      position: relative;
+    }
+  }
+}

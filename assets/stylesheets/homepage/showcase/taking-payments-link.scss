@@ -98,3 +98,11 @@
 
 
 }
+
+@include respond-to(desktop) {
+  .taking-payments-link {
+    .container {
+      margin-top: 160px;
+    }
+  }
+}
