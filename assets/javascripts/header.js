@@ -28,6 +28,7 @@
     $('.all-content').on('click', function() {
         closeSearch();
     }).on('click', '.search-link', function(event) {
+        event.preventDefault();
         event.stopPropagation();
         if(!searchBarActive) {
             openSearch();
