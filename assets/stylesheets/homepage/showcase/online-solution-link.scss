@@ -21,6 +21,7 @@
     height: 90px;
     top: 115px;
     left: 74px;
+    @include transition-delay(0.4s);
     .cls-1 {
       fill: $purple;
     }

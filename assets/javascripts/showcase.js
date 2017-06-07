@@ -3,19 +3,20 @@
 
     var $this = $('.showcase'),
         $links = $this.find('.link'),
-        scrollOffset = 200;
+        scrollOffsetTop = 200,
+        scrollOffsetBottom = 0;
 
     //function checks if an element has scrolled into view
     function elementScrolled(elem) {
         var docViewTop = $(window).scrollTop(),
             docViewBottom = docViewTop + $(window).height(),
-            elemTop = $(elem).offset().top + scrollOffset,
-            elemBottom = elemTop + $(elem).height() - scrollOffset;
+            elemTop = $(elem).offset().top + scrollOffsetTop,
+            elemBottom = elemTop + $(elem).height() - scrollOffsetBottom;
 
         return ((elemTop <= docViewBottom) && (elemBottom >= docViewTop));
     }
 
-    $(window).scroll(function(){
+    function checkForScrolledElements(){
         $links.each(function(){
             var $link = $(this);
             if(elementScrolled($link)) {
@@ -24,17 +25,18 @@
                 $link.removeClass('animate').removeClass('active');
             }
         });
+    }
 
-    });
+    $(window).scroll(checkForScrolledElements);
 
     $this.find('.link').mouseenter(function(event) {
         $(event.currentTarget).removeClass('active');
-//        $(event.currentTarget).removeClass('animate');
     }).mouseleave(function(event){
         if(elementScrolled($(event.currentTarget))) {
             $(event.currentTarget).addClass('active');
-//            $(event.currentTarget).addClass('animate');
         }
     });
+
+    checkForScrolledElements();
 
 })(jQuery);
