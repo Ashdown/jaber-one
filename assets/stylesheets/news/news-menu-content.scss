@@ -1,6 +1,12 @@
 .news-menu-content {
   display: none;
   padding: 0 10px 32px 10px;
+  opacity: 1;
+  @include transition(opacity, 0.4s, linear);
+
+  &.invisible {
+    opacity: 0;
+  }
 
   &.visible {
     display: block;

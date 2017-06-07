@@ -7,9 +7,14 @@
 
     function openContent(href) {
         var $newContent = $(href.slice(href.indexOf('#')));
+        $newContent.addClass('invisible');
         $('.news-menu-content').removeClass('visible');
         $newContent.addClass('visible');
+        //close news menu if it is open (applies to mobile only)
         $this.removeClass('open');
+        window.setTimeout(function(){
+            $newContent.removeClass('invisible');
+        }, 100);
     }
 
     $this.find('.menu-link').on('click', function(event) {
