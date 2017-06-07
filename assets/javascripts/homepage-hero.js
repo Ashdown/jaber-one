@@ -2,7 +2,9 @@
 
     "use strict";
 
-    $('.homepage-hero').slick({
+    var $this = $('.homepage-hero');
+
+    $this.find('.content-list').slick({
         infinite: true,
         slidesToScroll: 1,
         arrows: false,
@@ -16,5 +18,15 @@
             }
         ]
     });
+
+    $this.find('.scroll-down-link').on('click', function(event) {
+        event.preventDefault();
+        $('html,body').animate({
+                scrollTop: $this.height() - $('.header').height()},
+            'slow');
+
+    });
+
+
 
 })(jQuery);

@@ -21,6 +21,31 @@
     right: -385px;
     margin-right: 0;
   }
+  .scroll-down-link {
+    position: absolute;
+    right: 10px;
+    top: 85px;
+    display: inline-block;
+    .next-trans-svg {
+      @include circle(40px);
+      @include rotate(90deg);
+      background-color: transparent;
+      @include transition(background-color, 0.2s, linear);
+      .border,
+      .shape {
+        fill: $white;
+        @include transition(fill, 0.2s, linear);
+      }
+    }
+    &:hover {
+      .next-trans-svg {
+        background-color: $white;
+        .shape {
+          fill: $black;
+        }
+      }
+    }
+  }
 
 }
 
@@ -58,6 +83,10 @@
       top: 0;
       $image-width: 1366px;
       margin-right: -($image-width/2);
+    }
+    .scroll-down-link {
+      right: 50px;
+      top: 190px;
     }
   }
 }
