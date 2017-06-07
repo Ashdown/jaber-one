@@ -28,7 +28,10 @@
 
     $this.find('.close-link').on('click', function(event) {
         event.preventDefault();
-        $('.introduction')[0].scrollIntoView(true);
+        $('html,body').animate({
+                scrollTop: $this.offset().top - 73},
+            'slow');
+
     });
 
     $(window).resize(function() {
