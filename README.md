@@ -18,6 +18,8 @@ All Pages on Heroku
 * [Content (generic page)](https://quiet-tundra-23866.herokuapp.com/content)
 * [help page](https://quiet-tundra-23866.herokuapp.com/help)
 * [help (with contact information shown)](https://quiet-tundra-23866.herokuapp.com/help?show-contact-information=true)
+* [404](https://quiet-tundra-23866.herokuapp.com/404)
+* [500](https://quiet-tundra-23866.herokuapp.com/500)
     
 Run App locally
 ---------------
