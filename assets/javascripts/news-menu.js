@@ -21,6 +21,10 @@
 
         var href = $(event.currentTarget).attr('href');
 
+        $this.find('.main-menu .link').removeClass('selected');
+        $(event.currentTarget).addClass('selected');
+
+
         if($page.hasClass('news-page')) {
             event.preventDefault();
             openContent(href);

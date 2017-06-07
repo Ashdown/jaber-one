@@ -54,6 +54,9 @@
       font-size: 18px;
       margin-top: 20px;
       display: block;
+      &.selected {
+        @include ag-bold();
+      }
     }
 
   }
