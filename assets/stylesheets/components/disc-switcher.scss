@@ -68,6 +68,15 @@
         fill: $color;
       }
 
+      .link:hover {
+        .svg {
+          background-color: $color;
+        }
+        .shape {
+          fill: $white;
+        }
+      }
+
       &.selected {
         .svg,
         .connector-line {
