@@ -19,18 +19,20 @@
         $links.each(function(){
             var $link = $(this);
             if(elementScrolled($link)) {
-                $link.addClass('animate');
+                $link.addClass('animate').addClass('active');
             } else {
-                $link.removeClass('animate');
+                $link.removeClass('animate').removeClass('active');
             }
         });
 
     });
 
     $this.find('.link').mouseenter(function(event) {
-        $(event.currentTarget).addClass('hover');
+        $(event.currentTarget).removeClass('active');
     }).mouseleave(function(event){
-        $(event.currentTarget).removeClass('hover');
+        if(elementScrolled($(event.currentTarget))) {
+            $(event.currentTarget).addClass('active');
+        }
     });
 
 })(jQuery);

@@ -1,4 +1,7 @@
-<%= erb :'homepage/homepage_hero' %>
-<%= erb :'homepage/showcase' %>
-
-<%= erb :'_partials/articles_list', :locals => {:title => 'Latest from'} %>
+<div class="homepage-page">
+    <%= erb :'homepage/homepage_hero' %>
+    <div class="showcase-container">
+        <%= erb :'homepage/showcase' %>
+    </div>
+    <%= erb :'_partials/articles_list', :locals => {:title => 'Latest from'} %>
+</div>

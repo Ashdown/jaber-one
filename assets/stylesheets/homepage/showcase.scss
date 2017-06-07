@@ -1,13 +1,14 @@
 .showcase {
-  background-color: $maroon;
   overflow: hidden;
   padding-bottom: 65px;
+  width: 320px;
+  margin: 0 auto;
 
   .sub-title,
   .link-text{
     @include ag-bold();
-    color: white;
-    font-size: 24px;
+    color: $off-white;
+    font-size: 26px;
     line-height: 1.2em;
     text-align: center;
     margin-left: 60px;

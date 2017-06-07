@@ -1,34 +1,32 @@
 .taking-payments-link {
   padding-top: 410px;
   .hand-svg {
-    height: 180px;
+    height: 160px;
     top: 140px;
     left: -170px;
+    z-index: 3;
     @include rotate(-10deg);
-    z-index: 300;
     @include transition(left, 0.4s, linear);
-    .cls-1 {
-      fill: #ed3590;
-    }
-    .cls-2 {
-      fill: #3c2938;
-    }
-    .cls-3 {
-      fill: #f69ac8;
+    .cls-1,
+    .cls-2,
+    .cls-3{
+      fill: $purple;
+      @include transition(fill, 0.2s, linear);
     }
   }
 
   .mobile-svg {
-    height: 155px;
+    height: 150px;
     top: 54px;
     left: 50%;
     margin-left: -44px;
-    z-index: 200;
-    .cls-1 {
-      fill: #ed3590;
+    z-index: 2;
+    .cls-1,
+    .cls-2{
+      fill: $purple;
+      @include transition(fill, 0.2s, linear);
     }
     .cls-2 {
-      fill: #fff;
       opacity: 0.5;
     }
   }
@@ -41,15 +39,16 @@
 
   .waves-svg {
     height: 110px;
-    top: 240px;
+    top: 235px;
     left: 50%;
     margin-left: -69px;
-    z-index: 100;
+    z-index: 1;
     opacity: 0;
     @include transition(opacity, 0.4s, linear);
     @include transition-delay(0.8s);
     .cls-1 {
-      fill: #ed3590;
+      fill: $purple;
+      @include transition(fill, 0.2s, linear);
     }
   }
   .link-text {
@@ -66,6 +65,34 @@
     .waves-svg {
       opacity: 1;
     }
+  }
+
+  &.active {
+    .hand-svg {
+      .cls-1 {
+        fill: $dark-pink;
+      }
+      .cls-2 {
+        fill: $maroon;
+      }
+      .cls-3 {
+        fill: $light-pink;
+      }
+    }
+    .mobile-svg {
+      .cls-1 {
+        fill: $dark-pink;
+      }
+      .cls-2 {
+        fill: $white;
+      }
+    }
+    .waves-svg {
+      .cls-1 {
+        fill: $dark-pink;
+      }
+    }
+
   }
 
 }
